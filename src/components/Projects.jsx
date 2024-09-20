@@ -28,7 +28,7 @@ export default function Projects() {
                     title={item.title}
                     description={item.description}
                     github={item.github}
-                    link={item.link}
+                    demo={item.demo}
                     techs={item.techs}
                   />
                 </li>

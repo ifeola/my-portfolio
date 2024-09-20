@@ -13,7 +13,7 @@
   border-bottom: 1px solid var(--primary-transparent-3);
   border-bottom-style: dashed;
 
-  z-index: 99;
+  z-index: 999;
   backdrop-filter: blur(24px);
   -ms-backdrop-filter: blur(24px);
   /* transition: background-color 300ms ease; */

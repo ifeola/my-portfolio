@@ -1,0 +1,21 @@
+.skills__content {
+  width: 100%;
+}
+
+.skills__list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2.4rem;
+  margin-block-start: 2.4rem;
+}
+
+@media (width >= 768px) {
+  .skills__list > * {
+    flex-basis: calc(100% / 3);
+  }
+
+  .skills__list {
+    gap: 4rem;
+  }
+}

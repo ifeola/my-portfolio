@@ -7,7 +7,7 @@ export default function Project({
   description,
   techs,
   github,
-  live,
+  demo,
 }) {
   return (
     <div className={style.project}>
@@ -31,7 +31,7 @@ export default function Project({
         </div>
         <div className={style.project__links}>
           <Social content="Github" link={github} />
-          <Social content="Live" link={live} />
+          <Social content="Live" link={demo} />
         </div>
       </div>
     </div>

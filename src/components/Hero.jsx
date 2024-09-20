@@ -1,6 +1,6 @@
 import styles from "../styles/hero.module.css";
 import Button from "./Button";
-import { heroCopy, socialLinks } from "../utils/constants";
+import { HERO_COPY, socialLinks } from "../utils/constants";
 import Social from "./Social";
 import Grid from "./Grid";
 import Diamond from "./Diamond";
@@ -17,7 +17,7 @@ export default function Hero() {
         <h1 className={styles.hero__heading}>
           I build <span>web experiences</span> that inspire.
         </h1>
-        <p className="body-copy">{heroCopy}</p>
+        <p className="body-copy">{HERO_COPY}</p>
         <div className={styles.hero__links}>
           <Button content="Send me a Mail" />
           <div className={styles.social__links}>
