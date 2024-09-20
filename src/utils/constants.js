@@ -4,6 +4,7 @@ import {
   GITHUB,
   HTML5,
   JavaScript,
+  React,
   TailwindCSS,
   TypeScript,
 } from "../components/SkillSVG";
@@ -58,7 +59,7 @@ export const skills = [
   },
   {
     skill: "React",
-    svg: "",
+    svg: React,
   },
   {
     skill: "TailwindCSS",
