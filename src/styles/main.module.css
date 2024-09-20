@@ -1,0 +1,32 @@
+.main {
+  width: 100%;
+  max-width: 1440px;
+
+  padding-inline: 1.5rem;
+  margin-inline: auto;
+  margin-block-start: 5.6rem;
+}
+
+.divider {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+
+  margin-inline: auto;
+
+  border-left: 1px solid var(--primary-transparent-3);
+  border-right: 1px solid var(--primary-transparent-3);
+  border-left-style: dashed;
+  border-right-style: dashed;
+}
+
+@media (width >=768px) {
+  .main {
+    margin-block-start: 8rem;
+    padding-inline: 0;
+  }
+
+  .divider {
+    width: 88%;
+  }
+}

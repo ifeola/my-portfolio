@@ -1,0 +1,32 @@
+.social__link {
+  display: flex;
+  align-items: center;
+}
+
+.social__list {
+  gap: 1.6rem;
+}
+
+.social__link {
+  color: var(--text-color);
+  gap: 0.4rem;
+  transition: color var(--transition-duration) var(--transition-timing);
+
+  svg {
+    fill: var(--text-color);
+  }
+}
+
+.social__link svg {
+  transition: fill var(--transition-duration) var(--transition-timing);
+}
+
+.social__link:hover,
+.social__link:active {
+  color: var(--accent-color);
+}
+
+.social__link:hover svg,
+.social__link:active svg {
+  fill: var(--accent-color);
+}

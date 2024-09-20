@@ -1,0 +1,27 @@
+.resume__btn {
+  padding-inline: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  border-radius: 100vw;
+
+  background: var(--primary-transparent-2);
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  height: 3.6rem;
+  transition: background-color var(--transition-duration)
+    var(--transition-timing);
+}
+
+.resume__btn:hover {
+  --hover: hsla(199, 100%, 45%, 0.329);
+  background-color: var(--hover);
+}
+
+@media (width >= 768px) {
+  .resume__btn {
+    height: 4rem;
+    padding-inline: 3.2rem;
+  }
+}

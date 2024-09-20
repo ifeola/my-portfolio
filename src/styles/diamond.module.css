@@ -1,0 +1,12 @@
+.diamond {
+  position: absolute;
+  width: 0.8rem;
+  height: 0.8rem;
+  background-color: var(--bg-color);
+  border: 1px solid var(--primary-color);
+  transform: rotate(45deg);
+  z-index: 100;
+  bottom: -0.4rem;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+}

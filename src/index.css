@@ -1,0 +1,260 @@
+:root {
+  --primary: 145, 100%, 32%;
+  --secondary: 180, 100%, 32%;
+  --bg: 0, 0%, 96%;
+  --white: 0, 0%, 10%;
+
+  --primary: hsl(199, 100%, 45%);
+  --primary: hsl(192, 100%, 45%);
+  --primary: 192, 100%, 45%;
+  --secondary: 199, 100%, 45%;
+  --bg: 228, 28%, 7%;
+  --white: 0, 0%, 90%;
+
+  --primary-color: hsla(var(--primary), 1);
+  --accent-color: hsla(var(--secondary), 1);
+  --bg-color: hsla(var(--bg), 1);
+  --text-color: hsl(0, 0%, 80%);
+  --white-color: hsla(var(--white), 1);
+
+  /* Transparent */
+  --primary-transparent-2: hsla(var(--primary), 0.24);
+  --primary-transparent-3: hsla(var(--primary), 0.32);
+  --accent-transparent: hsla(var(--secondary), 0.32);
+  --accent-transparent-6: hsla(var(--secondary), 0.64);
+  --bg-transparent-5: hsla(var(--bg), 0.56);
+  --white-transparent: hsla(var(--white), 0.16);
+  --white-transparent-24: hsla(var(--white), 0.24);
+
+  --Switzer-medium: Switzer-medium, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  --Switzer-regular: Switzer-regular, system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif;
+  --Switzer-bold: Switzer-bold, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+
+  --h1-fz: 8rem;
+  --h2-fz: 4.8rem;
+  --h3-fz: 3.2rem;
+  --h4-fz: 2rem;
+  --body-copy: 1.6rem;
+  --link-fz: 1.4rem;
+  --subtext-fz: 1.4rem;
+
+  --h1-mobile-fz: 4.8rem;
+  --h2-mobile-fz: 3.2rem;
+  --h3-mobile-fz: 2.4rem;
+  --h4-mobile-fz: 1.6rem;
+  --body-mobile-copy: 1.4rem;
+  --link-mobile-fz: 1.4rem;
+  --subtext-mobile-fz: 1.2rem;
+
+  --transition-duration: 250ms;
+  --transition-timing: ease;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Switzer-bold";
+  src: url("/fonts/Switzer-Bold.woff2") format("woff2"),
+    url("/fonts/Switzer-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Switzer-medium";
+  src: url("/fonts/Switzer-Medium.woff2") format("woff2"),
+    url("/fonts/Switzer-Medium.woff2") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Switzer-regular";
+  src: url("/fonts/Switzer-Regular.woff2") format("woff2"),
+    url("/fonts/Switzer-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-snap-type: mandatory;
+}
+
+body {
+  font-family: var(--Switzer-regular);
+  font-size: var(--body-mobile-copy);
+  line-height: 1.7;
+  background-color: var(--bg-color);
+  overflow-x: hidden;
+  color: var(--text-color);
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+  font-family: var(--Switzer-bold);
+}
+
+h1 {
+  color: var(--white-color);
+  font-size: var(--h1-mobile-fz);
+  font-weight: 700;
+  line-height: 1;
+
+  span {
+    color: var(--text-color);
+  }
+}
+
+h2 {
+  font-size: var(--h2-mobile-fz);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-block-end: 1.6rem;
+}
+
+h3 {
+  font-size: var(--h3-mobile-fz);
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+h4 {
+  font-size: var(--h4-mobile-fz);
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+img,
+svg {
+  max-width: 100%;
+  display: inline-block;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-flex;
+  color: var(--text-color);
+  font-family: var(--Switzer-medium);
+  font-size: var(--link-fz);
+  font-weight: 500;
+}
+
+svg {
+  fill: var(--white-color);
+}
+
+section {
+  padding-block: 10rem;
+  padding-inline: 1.25rem;
+}
+
+section + section {
+  border-top: 1px solid var(--primary-transparent-3);
+  border-top-style: dashed;
+}
+
+section {
+  width: 100%;
+  color: var(--text-color);
+}
+
+.container {
+  width: 100%;
+  margin-inline: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.subtitle {
+  color: var(--text-color);
+  padding: 0.8rem 1.6rem 0.8rem 2.4rem;
+  border: 1px solid var(--white-transparent-24);
+  width: fit-content;
+  border-radius: 100vw;
+  background-color: var(--white-transparent);
+  font-size: 1.4rem;
+  font-weight: 600;
+  position: relative;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 1.2rem;
+    transform: translateY(-50%);
+    width: 0.4rem;
+    height: 0.4rem;
+    background-color: var(--accent-color);
+    border-radius: 100vw;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 45%;
+    left: 100%;
+    height: 0.1rem;
+    width: clamp(6rem, 24vw, 24rem);
+    background-color: var(--white-transparent-24);
+  }
+}
+
+.body-copy {
+  max-width: 56ch;
+  margin-block-end: 2.4rem;
+  font-family: var(--Switzer-regular);
+}
+
+@media (width >= 768px) {
+  h1 {
+    font-size: var(--h1-fz);
+  }
+
+  h2 {
+    font-size: var(--h2-fz);
+  }
+
+  h3 {
+    font-size: var(--h3-fz);
+  }
+
+  h4 {
+    font-size: var(--h4-fz);
+  }
+
+  .container {
+    width: 88%;
+  }
+
+  .body-copy {
+    margin-block-end: 1.6rem;
+    font-size: var(--body-copy);
+  }
+}

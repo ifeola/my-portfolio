@@ -1,0 +1,97 @@
+.hamburger_inner,
+.hamburger_inner::before,
+.hamburger_inner::after {
+  background-color: var(--white-color) !important;
+}
+
+.hamburger {
+  border: none;
+  outline: none;
+  appearance: none;
+  background-color: transparent;
+  cursor: pointer;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1010000;
+}
+
+.hamburger_box {
+  display: flex;
+  align-items: center;
+  width: 3.2rem;
+  height: 2.4rem;
+  position: relative;
+}
+
+.hamburger_inner {
+  position: absolute;
+  top: 4px;
+  display: inline-block;
+  width: 80%;
+  height: 2px;
+  background-color: var(--white-color);
+  transform: rotate(0);
+  transition: top var(--transition-duration) var(--transition-timing),
+    transform var(--transition-duration) var(--transition-timing);
+}
+
+.hamburger_inner::before,
+.hamburger_inner::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: inherit;
+  color: inherit;
+  left: 0;
+}
+
+.hamburger_inner::before {
+  opacity: 1;
+  top: 0.65rem;
+  opacity: 1;
+  transition: opacity var(--transition-duration) var(--transition-timing);
+}
+
+.hamburger_inner::after {
+  opacity: 1;
+  bottom: -1.4rem;
+  transform: rotate(0);
+  transition: bottom var(--transition-duration) var(--transition-timing),
+    transform var(--transition-duration) var(--transition-timing);
+}
+
+.hamburger[aria-expanded="true"] + .nav__links {
+  top: 0;
+}
+
+header:has(.hamburger[aria-expanded="true"]) + .nav__links {
+  top: 0;
+}
+
+.hamburger[aria-expanded="true"] .hamburger_inner::before {
+  transition: opacity var(--transition-duration) var(--transition-timing);
+  opacity: 0;
+}
+
+.hamburger[aria-expanded="true"] .hamburger_inner {
+  top: 1.4rem;
+  transition: top var(--transition-duration) var(--transition-timing),
+    transform var(--transition-duration) var(--transition-timing) 0.12s;
+  transform: rotate(-45deg);
+}
+
+.hamburger[aria-expanded="true"] .hamburger_inner::after {
+  bottom: 0;
+  transition: bottom var(--transition-duration) var(--transition-timing),
+    transform var(--transition-duration) var(--transition-timing) 0.12s;
+  transform: rotate(90deg);
+}
+
+@media (width >= 768px) {
+  .hamburger {
+    display: none;
+  }
+}

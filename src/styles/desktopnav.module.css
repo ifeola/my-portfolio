@@ -1,0 +1,16 @@
+.desktop__links {
+  display: none;
+}
+
+@media (width >= 768px) {
+  .desktop__links,
+  .desktop__list {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+  }
+
+  .desktop__link {
+    font-size: var(--link-fz);
+  }
+}
