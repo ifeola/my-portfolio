@@ -56,7 +56,6 @@
 @media (width >= 768px) {
   .hero {
     min-height: 58rem;
-    padding-block: 0;
   }
 
   .hero__links {

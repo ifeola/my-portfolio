@@ -142,8 +142,7 @@ h4 {
   line-height: 1.3;
 }
 
-img,
-svg {
+img {
   max-width: 100%;
   display: inline-block;
 }
@@ -166,18 +165,17 @@ svg {
 }
 
 section {
+  position: relative;
   padding-block: 10rem;
   padding-inline: 1.25rem;
+
+  width: 100%;
+  color: var(--text-color);
 }
 
 section + section {
   border-top: 1px solid var(--primary-transparent-3);
   border-top-style: dashed;
-}
-
-section {
-  width: 100%;
-  color: var(--text-color);
 }
 
 .container {
@@ -224,6 +222,11 @@ section {
     width: clamp(6rem, 24vw, 24rem);
     background-color: var(--white-transparent-24);
   }
+}
+
+.section-subtitle {
+  margin-block-end: 3.2rem;
+  align-self: flex-start;
 }
 
 .body-copy {

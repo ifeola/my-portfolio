@@ -1,0 +1,28 @@
+#projects {
+  position: relative;
+}
+
+.projects__content {
+  width: 100%;
+  padding-block-start: 1.2rem;
+}
+
+.project__list {
+  position: relative;
+  display: grid;
+  gap: 4rem;
+}
+
+.project__item {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 24rem auto;
+  grid-auto-flow: dense;
+  border-radius: 10px;
+}
+
+@media (width >= 768px) {
+  .project__list {
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  }
+}

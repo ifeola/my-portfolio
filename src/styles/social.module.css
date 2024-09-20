@@ -13,12 +13,10 @@
   transition: color var(--transition-duration) var(--transition-timing);
 
   svg {
+    width: 1.8rem;
     fill: var(--text-color);
+    transition: fill var(--transition-duration) var(--transition-timing);
   }
-}
-
-.social__link svg {
-  transition: fill var(--transition-duration) var(--transition-timing);
 }
 
 .social__link:hover,
