@@ -24,7 +24,7 @@ export default function Projects() {
               return (
                 <li className={style.project__item} key={index}>
                   <Project
-                    image={`/src/assets/${item.image}`}
+                    image={`/assets/${item.image}`}
                     title={item.title}
                     description={item.description}
                     github={item.github}

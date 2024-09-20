@@ -4,8 +4,6 @@
   --bg: 0, 0%, 96%;
   --white: 0, 0%, 10%;
 
-  --primary: hsl(199, 100%, 45%);
-  --primary: hsl(192, 100%, 45%);
   --primary: 192, 100%, 45%;
   --secondary: 199, 100%, 45%;
   --bg: 228, 28%, 7%;
@@ -20,7 +18,7 @@
   /* Transparent */
   --primary-transparent-2: hsla(var(--primary), 0.24);
   --primary-transparent-3: hsla(var(--primary), 0.32);
-  --accent-transparent: hsla(var(--secondary), 0.32);
+  --accent-transparent: hsla(var(--secondary), 0.24);
   --accent-transparent-6: hsla(var(--secondary), 0.64);
   --bg-transparent-5: hsla(var(--bg), 0.56);
   --white-transparent: hsla(var(--white), 0.16);

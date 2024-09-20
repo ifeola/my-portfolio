@@ -4,11 +4,14 @@ import style from "../styles/contact.module.css";
 import Social from "./Social";
 import Grid from "./Grid";
 import Button from "./Button";
+import Diamond from "./Diamond";
 
 export default function Contact() {
   return (
     <section id="contact">
       <Grid />
+      <Diamond left="-0.4rem" />
+      <Diamond right="-0.4rem" />
       <div className="container">
         <h4 className="subtitle section-subtitle">Contact Me</h4>
         <div className={style.contact__content}>

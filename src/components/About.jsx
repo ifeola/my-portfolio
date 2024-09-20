@@ -1,7 +1,7 @@
 import { stackList } from "../utils/constants";
 import Diamond from "./Diamond";
 import style from "../styles/about.module.css";
-import avatar from "../assets/avatar.png";
+import avatar from "/assets/avatar.png";
 
 export default function About() {
   return (
