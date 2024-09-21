@@ -1,14 +1,16 @@
 import style from "../styles/footer.module.css";
 
 export default function Footer() {
+  const date = new Date();
+  const year = date.getFullYear();
   return (
     <footer className={style.footer}>
       <div className={style.divider}>
         <div className={`container ${style.footer__container}`}>
           <div className={style.footer__items}>
-            <span>Built by Arogunmasa Abayomi</span>
+            <span>Built with ❤️ by Abayomi A.</span>
             <div>
-              Copyright <span className="year"></span>
+              Copyright <span className={style.year}>{year}</span>
             </div>
           </div>
         </div>
