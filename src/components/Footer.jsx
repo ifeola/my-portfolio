@@ -8,7 +8,9 @@ export default function Footer() {
       <div className={style.divider}>
         <div className={`container ${style.footer__container}`}>
           <div className={style.footer__items}>
-            <span>Built with ❤️ by Abayomi A.</span>
+            <span>
+              Built with ❤️ by <span className={style.name}>Abayomi A.</span>
+            </span>
             <div>
               Copyright <span className={style.year}>{year}</span>
             </div>

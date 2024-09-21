@@ -4,7 +4,7 @@
 
   border-top: 1px solid var(--primary-transparent-3);
   border-top-style: dashed;
-  padding-inline: 1.2rem;
+  padding-inline: 1rem;
 }
 
 .divider {
@@ -33,6 +33,10 @@
   align-items: center;
   justify-content: space-between;
   color: var(--text-color);
+}
+
+.name {
+  font-weight: 600;
 }
 
 @media (width >= 768px) {

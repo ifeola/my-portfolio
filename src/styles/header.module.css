@@ -29,7 +29,7 @@
   align-items: center;
   justify-content: space-between;
 
-  margin-inline: 1.2rem;
+  margin-inline: 1rem;
   padding-inline: 1.25rem;
   border-inline: 1px solid var(--primary-transparent-3);
   border-inline-style: dashed;

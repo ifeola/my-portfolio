@@ -1,11 +1,24 @@
-.logo {
+.logo__bg {
   display: flex;
   align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  h4 {
+    display: none;
+  }
+}
+
+.logo {
   width: 3.2rem;
 }
 
 @media (width >= 768px) {
   .logo {
-    width: auto;
+    width: 3.2rem;
+  }
+
+  .logo__bg h4 {
+    display: inline-block;
   }
 }
