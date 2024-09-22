@@ -4,6 +4,7 @@ import { HERO_COPY, socialLinks } from "../utils/constants";
 import Social from "./Social";
 import Grid from "./Grid";
 import Diamond from "./Diamond";
+import LogoOnly from "./LogoOnly";
 
 export default function Hero() {
   return (
@@ -12,6 +13,9 @@ export default function Hero() {
       <Diamond left="-0.4rem" />
       <Diamond right="-0.4rem" />
       <div className={styles.circle}></div>
+      <a href="#hero" className={styles.logo__roll}>
+        <LogoOnly />
+      </a>
       <div className="container">
         <h4 className="subtitle">Hello! I am Abayomi</h4>
         <h1 className={styles.hero__heading}>

@@ -1,11 +1,11 @@
-import LogoImage from "/assets/logo1.svg";
 import style from "../styles/logo.module.css";
+import LogoOnly from "./LogoOnly";
 
 export default function Logo() {
   return (
     <div className={style.logo__bg}>
-      <img className={style.logo} src={LogoImage} alt="Logo Image" />
-      <h4>CodeBreaker</h4>
+      <LogoOnly />
+      <h4>Codeit</h4>
     </div>
   );
 }
