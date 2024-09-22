@@ -24,15 +24,15 @@
   --white-transparent: hsla(var(--white), 0.16);
   --white-transparent-24: hsla(var(--white), 0.24);
 
-  --Switzer-medium: Switzer-medium, system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-    sans-serif;
-  --Switzer-regular: Switzer-regular, system-ui, -apple-system,
+  --Space-Grotesk-Regular: Space-Grotesk-Regular, system-ui, -apple-system,
     BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
     "Open Sans", "Helvetica Neue", sans-serif;
-  --Switzer-bold: Switzer-bold, system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-    sans-serif;
+  --Space-Grotesk-Medium: Space-Grotesk-Medium, system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif;
+  --Space-Grotesk-Bold: Space-Grotesk-Bold, system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif;
 
   --h1-fz: 8rem;
   --h2-fz: 4.8rem;
@@ -62,7 +62,7 @@
   padding: 0;
 }
 
-@font-face {
+/* @font-face {
   font-family: "Switzer-bold";
   src: url("/fonts/Switzer-Bold.woff2") format("woff2"),
     url("/fonts/Switzer-Bold.woff") format("woff");
@@ -84,6 +84,33 @@
     url("/fonts/Switzer-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
+} */
+
+@font-face {
+  font-family: "Space-Grotesk-Regular";
+  src: url("/fonts/SpaceGrotesk-Regular.woff2") format("woff2"),
+    url("/fonts/SpaceGrotesk-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Space-Grotesk-Medium";
+  src: url("/fonts/SpaceGrotesk-Medium.woff2") format("woff2"),
+    url("/fonts/SpaceGrotesk-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Space-Grotesk-Bold";
+  src: url("/fonts/SpaceGrotesk-Bold.woff2") format("woff2"),
+    url("/fonts/SpaceGrotesk-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 html {
@@ -94,7 +121,7 @@ html {
 }
 
 body {
-  font-family: var(--Switzer-regular);
+  font-family: var(--Space-Grotesk-Regular);
   font-size: var(--body-mobile-copy);
   line-height: 1.7;
   background-color: var(--bg-color);
@@ -108,7 +135,7 @@ h2,
 h3,
 h4 {
   text-wrap: balance;
-  font-family: var(--Switzer-bold);
+  font-family: var(--Space-Grotesk-Bold);
 }
 
 h1 {
@@ -154,7 +181,7 @@ a {
   text-decoration: none;
   display: inline-flex;
   color: var(--text-color);
-  font-family: var(--Switzer-medium);
+  font-family: var(--Space-Grotesk-Medium);
   font-size: var(--link-fz);
   font-weight: 500;
 }
@@ -231,7 +258,7 @@ section + section {
 .body-copy {
   max-width: 56ch;
   margin-block-end: 2.4rem;
-  font-family: var(--Switzer-regular);
+  font-family: var(--Space-Grotesk-Regular);
 }
 
 @media (width >= 768px) {
