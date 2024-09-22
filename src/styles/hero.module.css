@@ -59,6 +59,8 @@
   right: 2rem;
   bottom: 6rem;
   z-index: 100;
+  scale: 0;
+  transition: scale var(--transition-duration) var(--transition-timing);
 }
 
 .logo__roll svg {
@@ -67,6 +69,10 @@
   fill: var(--primary-color);
   position: relative;
   animation: rotate 10000ms infinite linear;
+}
+
+.scroll__active {
+  scale: 1;
 }
 
 @keyframes rotate {
@@ -93,7 +99,7 @@
   }
 
   .logo__roll {
-    right: 8.8rem;
+    right: 6.6rem;
   }
 
   @keyframes bounce {

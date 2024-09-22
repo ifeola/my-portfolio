@@ -5,15 +5,27 @@ import Social from "./Social";
 import Grid from "./Grid";
 import Diamond from "./Diamond";
 import LogoOnly from "./LogoOnly";
+import { useState } from "react";
 
 export default function Hero() {
+  const [scrollHeight, setScrollHeight] = useState(0);
+  function onScroll() {
+    setScrollHeight((prevValue) => (prevValue = window.scrollY));
+  }
+
+  window.addEventListener("scroll", onScroll);
+
   return (
     <section className={styles.hero} id="hero">
       <Grid />
       <Diamond left="-0.4rem" />
       <Diamond right="-0.4rem" />
       <div className={styles.circle}></div>
-      <a href="#hero" className={styles.logo__roll}>
+      <a
+        href="#hero"
+        className={`${styles.logo__roll} ${
+          scrollHeight > 500 ? styles.scroll__active : ""
+        }`}>
         <LogoOnly />
       </a>
       <div className="container">
