@@ -59,10 +59,10 @@
   right: 2rem;
   bottom: -2rem;
   z-index: 100;
+  width: 3.2rem;
 }
 
 .logo__roll svg {
-  width: 3.2rem;
   fill: var(--primary-color);
   position: relative;
   animation: rotate 10000ms infinite linear;
