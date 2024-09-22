@@ -56,8 +56,8 @@
 
 .logo__roll {
   position: fixed;
-  right: 2rem;
-  bottom: 6rem;
+  right: 4%;
+  bottom: 8%;
   z-index: 100;
   scale: 0;
   transition: scale var(--transition-duration) var(--transition-timing);
@@ -99,7 +99,7 @@
   }
 
   .logo__roll {
-    right: 8.8rem;
+    right: 7.2%;
   }
 
   @keyframes bounce {

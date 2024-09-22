@@ -1,16 +1,20 @@
 .cta {
   position: relative;
+
   height: 4.8rem;
   width: 100%;
   padding-inline: 3.2rem;
   padding-block: 0.4rem;
+  border-radius: 100vw;
+
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.8rem;
-  border-radius: 100vw;
-  background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+
+  text-wrap: nowrap;
   color: var(--bg-color);
+  background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
   line-height: 1;
   transition: opacity var(--transition-duration) var(--transition-timing);
 
