@@ -5,15 +5,21 @@ import Social from "./Social";
 import Grid from "./Grid";
 import Diamond from "./Diamond";
 import LogoOnly from "./LogoOnly";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Hero() {
   const [scrollHeight, setScrollHeight] = useState(0);
+
   function onScroll() {
     setScrollHeight((prevValue) => (prevValue = window.scrollY));
   }
 
-  window.addEventListener("scroll", onScroll);
+  useEffect(() => {
+    window.addEventListener("scroll", onScroll);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+    };
+  });
 
   return (
     <section className={styles.hero} id="hero">
