@@ -5,7 +5,7 @@
   gap: 2.4rem;
   padding-block: 2em;
   border: 1px solid var(--white-transparent);
-  border-radius: 10px;
+  border-radius: 8px;
 
   svg {
     width: 8rem;

@@ -5,7 +5,7 @@
   width: 100%;
   padding-inline: 3.2rem;
   padding-block: 0.4rem;
-  border-radius: 100vw;
+  border-radius: 8px;
 
   display: flex;
   align-items: center;
@@ -38,7 +38,7 @@
     var(--primary-transparent-2),
     var(--accent-transparent)
   );
-  border-radius: 100vw;
+  border-radius: 8px;
   left: 4px;
   top: 4px;
   opacity: 1;

@@ -22,7 +22,7 @@ export default function Project({
             className={style.project__link}>
             <h4>{title}</h4>
           </a>
-          <p className={`body-copy ${style.project__desc}`}>{description}</p>
+          <p className={style.project__desc}>{description}</p>
           <div className={style.project__technologies}>
             {techs.map((tech, index) => {
               return <span key={index}>{tech}</span>;

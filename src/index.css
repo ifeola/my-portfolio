@@ -13,7 +13,7 @@
   --accent-color: hsla(var(--secondary), 1);
   --bg-color: hsla(var(--bg), 1);
   --white-color: hsla(var(--white), 1);
-  --text-color: hsl(0, 0%, 80%);
+  --text-color: hsl(0, 0%, 72%);
   --content-bg: hsl(240, 28%, 7%);
 
   /* Transparent */
@@ -111,6 +111,7 @@ h1,
 h2,
 h3,
 h4 {
+  color: var(--white-color);
   text-wrap: balance;
   font-family: var(--Space-Grotesk-Bold);
 }
@@ -196,7 +197,7 @@ section + section {
   padding: 0.8rem 1.6rem 0.8rem 2.4rem;
   border: 1px solid var(--white-transparent-24);
   width: fit-content;
-  border-radius: 100vw;
+  border-radius: 8px;
   background-color: var(--white-transparent);
   font-size: 1.4rem;
   font-weight: 600;

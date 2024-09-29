@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   gap: 0.8rem;
-  border-radius: 100vw;
+  border-radius: 8px;
 
   background: var(--primary-transparent-2);
   border: 1px solid var(--primary-color);
