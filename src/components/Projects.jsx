@@ -22,8 +22,9 @@ export default function Projects() {
           <ul className={style.project__list}>
             {data.map((item, index) => {
               return (
-                <li className={style.project__item} key={index}>
+                <>
                   <Project
+                    key={index}
                     image={`/assets/${item.image}`}
                     title={item.title}
                     description={item.description}
@@ -31,7 +32,7 @@ export default function Projects() {
                     demo={item.demo}
                     techs={item.techs}
                   />
-                </li>
+                </>
               );
             })}
           </ul>

@@ -10,7 +10,7 @@ export default function Project({
   demo,
 }) {
   return (
-    <div className={style.project}>
+    <li className={style.project}>
       <div className={style.project__image}>
         <img src={image} alt={`${title} image`} />
       </div>
@@ -19,7 +19,7 @@ export default function Project({
           <a
             href="https://abayome-todo.netlify.app/"
             target="_blank"
-            className="project__link">
+            className={style.project__link}>
             <h4>{title}</h4>
           </a>
           <p className={`body-copy ${style.project__desc}`}>{description}</p>
@@ -34,6 +34,6 @@ export default function Project({
           <Social content="Live" link={demo} />
         </div>
       </div>
-    </div>
+    </li>
   );
 }

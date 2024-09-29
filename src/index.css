@@ -12,8 +12,9 @@
   --primary-color: hsla(var(--primary), 1);
   --accent-color: hsla(var(--secondary), 1);
   --bg-color: hsla(var(--bg), 1);
-  --text-color: hsl(0, 0%, 80%);
   --white-color: hsla(var(--white), 1);
+  --text-color: hsl(0, 0%, 80%);
+  --content-bg: hsl(240, 28%, 7%);
 
   /* Transparent */
   --primary-transparent-2: hsla(var(--primary), 0.24);
@@ -61,30 +62,6 @@
   margin: 0;
   padding: 0;
 }
-
-/* @font-face {
-  font-family: "Switzer-bold";
-  src: url("/fonts/Switzer-Bold.woff2") format("woff2"),
-    url("/fonts/Switzer-Bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Switzer-medium";
-  src: url("/fonts/Switzer-Medium.woff2") format("woff2"),
-    url("/fonts/Switzer-Medium.woff2") format("woff");
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Switzer-regular";
-  src: url("/fonts/Switzer-Regular.woff2") format("woff2"),
-    url("/fonts/Switzer-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-} */
 
 @font-face {
   font-family: "Space-Grotesk-Regular";

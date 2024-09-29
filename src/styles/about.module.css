@@ -69,7 +69,7 @@
   .about__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: start;
+    align-items: center;
     gap: 4rem;
   }
 
