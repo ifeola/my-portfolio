@@ -1,16 +1,11 @@
 .social__link {
   display: flex;
   align-items: center;
-}
-
-.social__list {
-  gap: 1.6rem;
-}
-
-.social__link {
   color: var(--text-color);
   gap: 0.4rem;
-  transition: color var(--transition-duration) var(--transition-timing);
+  border: 1px solid transparent;
+  transition: color var(--transition-duration) var(--transition-timing),
+    border-color var(--transition-duration) var(--transition-timing);
 
   svg {
     width: 1.8rem;

@@ -1,5 +1,4 @@
-import { stackList } from "../utils/constants";
-import Diamond from "./Diamond";
+import Diamond from "../components/Diamond";
 import style from "../styles/about.module.css";
 import avatar from "/assets/avatar.png";
 

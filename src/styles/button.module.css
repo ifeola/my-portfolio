@@ -23,8 +23,7 @@
     width: 2.4rem;
     opacity: 1;
     transform: translateX(0);
-    transition: opacity var(--transition-duration) var(--transition-timing),
-      transform var(--transition-duration) var(--transition-timing);
+    transition: opacity var(--transition-duration) var(--transition-timing);
   }
 }
 

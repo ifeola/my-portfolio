@@ -1,10 +1,10 @@
-import About from "./components/About";
-import Contact from "./components/Contact";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Hero from "./components/Hero";
-import Projects from "./components/Projects";
-import Skills from "./components/Skills";
+import Hero from "./pages/Hero";
+import Projects from "./pages/Projects";
+import Skills from "./pages/Skills";
 import style from "./styles/main.module.css";
 
 function App() {

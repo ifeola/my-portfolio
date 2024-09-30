@@ -1,8 +1,8 @@
-import Diamond from "./Diamond";
-import Grid from "./Grid";
+import Diamond from "../components/Diamond";
+import Grid from "../components/Grid";
 import style from "../styles/projects.module.css";
 import data from "../utils/data";
-import Project from "./Project";
+import Project from "../components/Project";
 
 export default function Projects() {
   return (
@@ -20,21 +20,23 @@ export default function Projects() {
         </p>
         <div className={style.projects__content}>
           <ul className={style.project__list}>
-            {data.map((item, index) => {
-              return (
-                <>
-                  <Project
-                    key={index}
-                    image={`/assets/${item.image}`}
-                    title={item.title}
-                    description={item.description}
-                    github={item.github}
-                    demo={item.demo}
-                    techs={item.techs}
-                  />
-                </>
-              );
-            })}
+            {data.map(
+              ({ image, title, description, github, demo, techs, id }) => {
+                return (
+                  <>
+                    <Project
+                      key={id}
+                      image={`/assets/${image}`}
+                      title={title}
+                      description={description}
+                      github={github}
+                      demo={demo}
+                      techs={techs}
+                    />
+                  </>
+                );
+              }
+            )}
           </ul>
         </div>
       </div>

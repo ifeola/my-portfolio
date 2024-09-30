@@ -1,10 +1,10 @@
 import { CONTACT_COPY, socialLinks } from "../utils/constants";
 import styles from "../styles/hero.module.css";
 import style from "../styles/contact.module.css";
-import Social from "./Social";
-import Grid from "./Grid";
-import Button from "./Button";
-import Diamond from "./Diamond";
+import Social from "../components/Social";
+import Grid from "../components/Grid";
+import Button from "../components/Button";
+import Diamond from "../components/Diamond";
 
 export default function Contact() {
   return (

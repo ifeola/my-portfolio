@@ -1,7 +1,7 @@
 import style from "../styles/skills.module.css";
 import { skills } from "../utils/constants";
-import Skill from "./Skill";
-import Diamond from "./Diamond";
+import Skill from "../components/Skill";
+import Diamond from "../components/Diamond";
 
 export default function Skills() {
   return (

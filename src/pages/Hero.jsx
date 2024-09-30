@@ -1,10 +1,10 @@
 import styles from "../styles/hero.module.css";
-import Button from "./Button";
+import Button from "../components/Button";
 import { HERO_COPY, socialLinks } from "../utils/constants";
-import Social from "./Social";
-import Grid from "./Grid";
-import Diamond from "./Diamond";
-import LogoOnly from "./LogoOnly";
+import Social from "../components/Social";
+import Grid from "../components/Grid";
+import Diamond from "../components/Diamond";
+import LogoOnly from "../components/LogoOnly";
 import { useEffect, useState } from "react";
 
 export default function Hero() {

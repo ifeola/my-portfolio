@@ -1,26 +1,29 @@
 .nav__links {
   position: fixed;
-  top: 5.6rem;
+  top: 0;
   right: 100%;
   bottom: 0;
-  width: 92%;
+  width: 100%;
   min-height: 100vh;
   min-height: 100dvh;
   overflow: hidden;
-  background-color: transparent;
-  z-index: 10;
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  background-color: var(--bg-transparent-5);
+  z-index: 100;
+  padding-top: 6.4rem;
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
   transition: right var(--transition-duration) var(--transition-timing);
 }
 
 .nav__list {
-  height: 100%;
+  height: 50%;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 0.5rem;
+  padding: 2rem 1rem;
   background-color: var(--bg-color);
 }
 
@@ -29,17 +32,19 @@
 }
 
 .nav__link {
-  font-size: 2.4rem;
+  background-color: var(--bg-color);
+  border-radius: 8px;
+  border: 1px solid var(--white-transparent);
+  font-size: 1.6rem;
   width: 100%;
-  padding: 1.2rem 2.4rem;
-}
-
-.nav__item + .nav__item:has(.nav__link) {
-  border-top: 1px solid var(--white-transparent);
+  display: grid;
+  place-content: center;
+  text-wrap: nowrap;
+  padding: 1rem 2rem;
 }
 
 .active {
-  right: 1.4rem;
+  right: 0rem;
   /* left: 1.2rem; */
 }
 

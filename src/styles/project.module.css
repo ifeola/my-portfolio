@@ -55,10 +55,10 @@
 }
 
 .project__links {
-  margin-block-start: 1.6rem;
+  margin-block-start: 1rem;
   display: flex;
   align-items: center;
-  gap: 1.6rem;
+  gap: 1rem;
 
   a {
     display: flex;
@@ -70,6 +70,10 @@
     text-align: center;
     background-color: var(--bg-color);
     border: 1px solid var(--white-transparent);
+  }
+
+  a:hover {
+    border-color: var(--secondary-color);
   }
 }
 
@@ -84,7 +88,7 @@
     background-color: var(--white-transparent);
     border: 1px solid var(--white-low);
     border-radius: 100vw;
-    color: var(--accent-transparent-6);
+    color: var(--text-color);
   }
 }
 
@@ -116,6 +120,11 @@
 
   .project__links {
     justify-content: flex-end;
+  }
+
+  .project__links {
+    margin-block-start: 1.6rem;
+    gap: 1.6rem;
   }
 
   .project__links a {

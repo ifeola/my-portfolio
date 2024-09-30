@@ -6,9 +6,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  scroll-snap-align: start;
-  scroll-margin-block-start: 5rem;
 }
 
 .hero__links {

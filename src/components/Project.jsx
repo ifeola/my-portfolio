@@ -8,9 +8,10 @@ export default function Project({
   techs,
   github,
   demo,
+  id,
 }) {
   return (
-    <li className={style.project}>
+    <li className={style.project} id={id}>
       <div className={style.project__image}>
         <img src={image} alt={`${title} image`} />
       </div>

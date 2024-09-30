@@ -9,7 +9,7 @@ import {
   TypeScript,
 } from "../components/SkillSVG";
 
-export const navLinks = ["Home", "About Me", "Projects", "Skills", "Contacts"];
+export const navLinks = ["Home", "About Me", "Projects", "Skills", "Contact"];
 
 export const stackList = [
   "HTML",
