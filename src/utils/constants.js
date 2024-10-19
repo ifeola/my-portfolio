@@ -4,8 +4,10 @@ import {
   GITHUB,
   HTML5,
   JavaScript,
+  LinkedIn,
   React,
   TailwindCSS,
+  Twitter,
   TypeScript,
 } from "../components/SkillSVG";
 
@@ -29,14 +31,17 @@ export const socialLinks = [
   {
     content: "Github",
     link: "https://github.com/ifeola",
+    icon: GITHUB,
   },
   {
     content: "LinkedIn",
     link: "https://www.linkedin.com/in/abayomi-arogunmasa-75254a134/",
+    icon: LinkedIn,
   },
   {
-    content: "Twitter",
+    content: "X(Twitter)",
     link: "https://x.com/abayomi_codes",
+    icon: Twitter,
   },
 ];
 

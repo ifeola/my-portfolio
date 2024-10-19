@@ -41,12 +41,12 @@ const data = [
   },
   {
     id: 5,
-    title: "Booklist App",
+    title: "Todo App",
     description:
-      "A Booklist app built with typescript and randomly generates ISBN for each book. The books are saved in local storage ",
-    techs: ["HTML", "CSS", "TypeScript"],
-    image: "booklist.webp",
-    github: "https://github.com/ifeola/booklist-typescript",
+      "A Todo app built with React. You can save, edit, delete and mark todo as completed",
+    techs: ["React"],
+    image: "todo.png",
+    github: "https://github.com/ifeola/todo-react-app",
     demo: "https://booklist-abayome.netlify.app/",
   },
   {
