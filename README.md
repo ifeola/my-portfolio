@@ -83,13 +83,21 @@ To get a local copy up and running, follow these steps:
    ```
 
 2. Navigate to the project directory:
+
+   ```sh
    cd my-portfolio
+   ```
 
 3. Install dependencies:
+
+   ```sh
    npm install#
+   ```
 
 4. Start the development server:
+   ```sh
    npm run dev
+   ```
 
 discuss my projects, skills, or just say hello, please feel free to reach out.
 
