@@ -91,7 +91,7 @@ To get a local copy up and running, follow these steps:
 3. Install dependencies:
 
    ```sh
-   npm install#
+   npm install
    ```
 
 4. Start the development server:
