@@ -36,10 +36,10 @@ export default function Hero() {
 			</a>
 			<div className="container">
 				<h4 className="subtitle">Hello! I am Abayomi</h4>
+				<h1 className={styles.hero__heading}>
+					I build <span>web experiences</span> that inspire.
+				</h1>
 				<div className={styles.hero__content}>
-					<h1 className={styles.hero__heading}>
-						I build <span>web experiences</span> that inspire.
-					</h1>
 					<p className="body-copy">{HERO_COPY}</p>
 					<div className={styles.hero__links}>
 						<Button content="Send me a Mail" />

@@ -208,13 +208,13 @@ section + section {
 	border-top: 1px solid var(--white-transparent-24);
 	border-bottom: 1px solid var(--white-transparent-24);
 	display: block;
-	font-size: 1.8rem;
-	/* background-color: var(--white-transparent); */
-	/* border-radius: 8px; */
-	font-weight: 600;
-	/* position: relative; */
+	font-size: 1.6rem;
+	font-weight: 700;
 	-webkit-backdrop-filter: blur(10px);
 	backdrop-filter: blur(10px);
+	/* background-color: var(--white-transparent); */
+	/* border-radius: 8px; */
+	/* position: relative; */
 
 	/* &::before {
     content: "";
