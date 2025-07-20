@@ -2,14 +2,12 @@ import { CONTACT_COPY, socialLinks } from "../utils/constants";
 import styles from "../styles/hero.module.css";
 import style from "../styles/contact.module.css";
 import Social from "../components/Social";
-import Grid from "../components/Grid";
 import Button from "../components/Button";
 import Diamond from "../components/Diamond";
 
 export default function Contact() {
   return (
     <section id="contact">
-      <Grid />
       <Diamond left="-0.4rem" />
       <Diamond right="-0.4rem" />
       <div className="container">

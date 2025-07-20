@@ -1,3 +1,7 @@
+.skill__list {
+  display: grid;
+}
+
 .skill__item {
   display: flex;
   flex-direction: column;

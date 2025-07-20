@@ -1,5 +1,4 @@
 import Diamond from "../components/Diamond";
-import Grid from "../components/Grid";
 import style from "../styles/projects.module.css";
 import data from "../utils/data";
 import Project from "../components/Project";
@@ -7,7 +6,6 @@ import Project from "../components/Project";
 export default function Projects() {
 	return (
 		<section className={style.projects} id="projects">
-			<Grid />
 			<Diamond left="-0.4rem" />
 			<Diamond right="-0.4rem" />
 			<div className="container">

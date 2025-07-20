@@ -1,12 +1,12 @@
 .grid__box {
-  position: absolute;
-  pointer-events: none;
-  z-index: -1;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  stroke: var(--accent-transparent);
-  -webkit-mask-image: linear-gradient(180deg, #ffffffad, transparent);
-  mask-image: linear-gradient(180deg, #ffffffad, transparent);
-  opacity: 0.56;
+	position: absolute;
+	pointer-events: none;
+	z-index: -1;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	stroke: var(--accent-transparent);
+	/* -webkit-mask-image: linear-gradient(180deg, #ffffffad, transparent); */
+	/* mask-image: linear-gradient(180deg, #ffffffad, transparent); */
+	opacity: 0.56;
 }
