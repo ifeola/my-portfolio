@@ -25,15 +25,9 @@
 	--white-transparent: hsla(var(--white), 0.16);
 	--white-transparent-24: hsla(var(--white), 0.16);
 
-	--Space-Grotesk-Regular: Space-Grotesk-Regular, system-ui, -apple-system,
-		BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
-		"Open Sans", "Helvetica Neue", sans-serif;
-	--Space-Grotesk-Medium: Space-Grotesk-Medium, system-ui, -apple-system,
-		BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
-		"Open Sans", "Helvetica Neue", sans-serif;
-	--Space-Grotesk-Bold: Space-Grotesk-Bold, system-ui, -apple-system,
-		BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
-		"Open Sans", "Helvetica Neue", sans-serif;
+	--inter-variable: InterVariable, system-ui, -apple-system, BlinkMacSystemFont,
+		"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+		sans-serif;
 
 	--h1-fz: 8rem;
 	--h2-fz: 4.8rem;
@@ -64,9 +58,9 @@
 }
 
 @font-face {
-	font-family: "Space-Grotesk-Regular";
-	src: url("/fonts/SpaceGrotesk-Regular.woff2") format("woff2"),
-		url("/fonts/SpaceGrotesk-Regular.woff") format("woff");
+	font-family: "InterVariable";
+	src: url("/fonts/InterVariable.woff2") format("woff2"),
+		url("/fonts/InterVariable.woff") format("woff");
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
@@ -74,19 +68,10 @@
 
 @font-face {
 	font-family: "Space-Grotesk-Medium";
-	src: url("/fonts/SpaceGrotesk-Medium.woff2") format("woff2"),
-		url("/fonts/SpaceGrotesk-Medium.woff") format("woff");
+	src: url("/fonts/InterVariable-Italic.woff2") format("woff2"),
+		url("/fonts/InterVariable-Italic.woff") format("woff");
 	font-weight: 500;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: "Space-Grotesk-Bold";
-	src: url("/fonts/SpaceGrotesk-Bold.woff2") format("woff2"),
-		url("/fonts/SpaceGrotesk-Bold.woff") format("woff");
-	font-weight: bold;
-	font-style: normal;
+	font-style: italic;
 	font-display: swap;
 }
 
@@ -94,10 +79,11 @@ html {
 	font-size: 62.5%;
 	scroll-behavior: smooth;
 	overflow-y: scroll;
+	font-family: var(--inter-variable), sans-serif;
+	font-feature-settings: "cv02", "cv03", "cv04", "cv11";
 }
 
 body {
-	font-family: var(--Space-Grotesk-Regular);
 	font-size: var(--body-mobile-copy);
 	line-height: 1.7;
 	background-color: var(--bg-color);
@@ -112,7 +98,8 @@ h3,
 h4 {
 	color: var(--white-color);
 	text-wrap: balance;
-	font-family: var(--Space-Grotesk-Bold);
+	font-family: var(--inter-variable);
+	font-weight: 700;
 }
 
 h1 {
@@ -158,7 +145,7 @@ a {
 	text-decoration: none;
 	display: inline-flex;
 	color: var(--text-color);
-	font-family: var(--Space-Grotesk-Medium);
+	font-family: var(--inter-variable);
 	font-size: var(--link-fz);
 	font-weight: 500;
 }
@@ -252,7 +239,7 @@ section + section {
 .body-copy {
 	max-width: 56ch;
 	margin-block-end: 2.4rem;
-	font-family: var(--Space-Grotesk-Regular);
+	font-family: var(--inter-variable);
 }
 
 @media (width >= 768px) {
