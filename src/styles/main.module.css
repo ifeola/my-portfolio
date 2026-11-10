@@ -7,12 +7,14 @@
 	margin-block-start: 5.6rem;
 }
 
+.main:focus {
+	outline: none;
+}
+
 .divider {
 	position: relative;
-	margin: 0 auto;
-	width: 100%;
-
 	margin-inline: auto;
+	width: 100%;
 
 	border-left: 1px solid var(--primary-transparent-3);
 	border-right: 1px solid var(--primary-transparent-3);
@@ -20,7 +22,7 @@
 	border-right-style: dashed;
 }
 
-@media (width >=768px) {
+@media (width >= 768px) {
 	.main {
 		margin-block-start: 8rem;
 		padding-inline: 0;

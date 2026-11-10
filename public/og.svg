@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#00b3e6" stroke-opacity="0.10" />
+    </pattern>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00b3e6" stop-opacity="0.22" />
+      <stop offset="100%" stop-color="#00b3e6" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="#0d0f17" />
+  <rect width="1200" height="630" fill="url(#grid)" />
+  <circle cx="1080" cy="110" r="260" fill="url(#glow)" />
+
+  <g transform="translate(80 64)">
+    <rect width="46" height="46" rx="8" fill="#00b3e6" fill-opacity="0.12" stroke="#00b3e6" stroke-opacity="0.8" />
+    <path d="M23 9 37 23 23 37 9 23Z" fill="#00b3e6" />
+  </g>
+  <text x="144" y="98" fill="#e6e6e6" font-family="Inter, sans-serif" font-size="22" font-weight="700" letter-spacing="5">FORGENTIK</text>
+
+  <text x="80" y="292" fill="#f2f2f2" font-family="Inter, sans-serif" font-size="60" font-weight="700" letter-spacing="-1.5">I build software that makes</text>
+  <text x="80" y="368" fill="#00b3e6" font-family="Inter, sans-serif" font-size="60" font-weight="700" letter-spacing="-1.5">public services easier to use.</text>
+
+  <text x="80" y="452" fill="#b8b8b8" font-family="Inter, sans-serif" font-size="26">Abayomi Arogunmasa · Full-stack developer, Ibadan</text>
+
+  <line x1="80" y1="512" x2="1120" y2="512" stroke="#00b3e6" stroke-opacity="0.35" stroke-dasharray="6 6" />
+
+  <text x="80" y="566" fill="#00b3e6" font-family="Inter, sans-serif" font-size="18" font-weight="600" letter-spacing="4">THINK. DESIGN. BUILD. EVOLVE.</text>
+  <text x="1120" y="566" fill="#b8b8b8" font-family="Inter, sans-serif" font-size="18" text-anchor="end">React · TypeScript · Node · PostgreSQL</text>
+</svg>

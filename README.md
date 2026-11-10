@@ -1,113 +1,78 @@
-# My Portfolio
+# Forgentik — Abayomi Arogunmasa
 
-Welcome to my portfolio! This project showcases my skills and projects as a web developer.
+A portfolio for full-stack work in education and the public sector. The site is a single-page React app with three documented case studies, a short about section, a focused stack list and a direct contact flow.
 
-## Table of Contents
+Live site: [abayome.netlify.app](https://abayome.netlify.app/)
 
-- [My Portfolio](#my-portfolio)
-  - [Table of Contents](#table-of-contents)
-  - [About](#about)
-  - [Technologies](#technologies)
-  - [Projects](#projects)
-  - [Getting Started](#getting-started)
-    - [Prerequisites](#prerequisites)
-    - [Installation](#installation)
-  - [Contact](#contact)
+## What is here
 
-## About
+- **Hero** — what I build, who I build it for, and clear links to work and email.
+- **Selected work** — three case studies: School Result Checking, URL Shortener and Expenses Tracker. Each card covers the problem, the solution, the stack, one key technical challenge, and links to source/demo where they exist.
+- **About** — the path from secondary-school teaching and a public-sector degree into full-stack development.
+- **Stack** — the tools used end to end, not a logo wall.
+- **Contact** — email, copy-to-clipboard, social links and a résumé download.
 
-My name is Arogunmasa Abayomi, a web developer with a strong foundation in HTML, CSS, and JavaScript. I've been building projects and learning from online resources, coding boot-camps, and personal experiments. I'm eager to apply my skills in real-world settings and continue learning from experienced professionals.
+## Built with
 
-## Technologies
-
-This portfolio is built using the following technologies:
-
-- HTML5
-- CSS3
-- JavaScript (ES6+)
-- React
+- React 18
 - TypeScript
-- TailwindCSS
-- Git
-- GitHub
+- Vite 5
+- CSS Modules
+- React hooks only — no router, no animation library
 
-## Projects
+The visual system (colours, spacing, dashed rules, diamonds, type scale) lives in [`src/index.css`](src/index.css) and the component-level `*.module.css` files. There is no Tailwind build in this project.
 
-Here are some of the projects featured in my portfolio:
+## Getting started
 
-1. **Todo App**
+```sh
+npm install
+npm run dev
+```
 
-   - Description: A basic task management tool allowing users to add, remove, edit, and mark tasks as completed.
-   - Techs: HTML, SCSS, JavaScript, Gulp
-   - [GitHub](https://github.com/ifeola/To-do-v2) | [Demo](https://abayome-todo.netlify.app/)
+The dev server runs on Vite's default port. To check the production build locally:
 
-2. **Netflix Landing Page Clone**
+```sh
+npm run build
+npm run preview
+```
 
-   - Description: A simple Netflix clone made with HTML, CSS, and a little bit of JavaScript.
-   - Techs: HTML, CSS, JavaScript
-   - [GitHub](https://github.com/ifeola/youflix) | [Demo](https://abayome-youflix.netlify.app/)
+## Scripts
 
-3. **Expenses Tracker**
+| Command            | Purpose                              |
+| ------------------ | ------------------------------------ |
+| `npm run dev`      | Start the Vite dev server            |
+| `npm run build`    | Type-check and emit the production build to `dist/` |
+| `npm run preview`  | Serve the production build locally   |
+| `npm run typecheck`| Run `tsc --noEmit`                   |
+| `npm run lint`     | Run ESLint                           |
 
-   - Description: An interactive expenses tracker with adding and removing expenses functionality.
-   - Techs: HTML, CSS, JavaScript
-   - [GitHub](https://github.com/ifeola/expenses-tracker) | [Demo](https://abayome-tracker.netlify.app/)
+## Project data
 
-4. **Booklist App**
+Case-study copy and links are centralised in [`src/utils/data.ts`](src/utils/data.ts). Add or edit a project there and the card renders automatically. Section copy, nav labels and contact details live in [`src/utils/constants.ts`](src/utils/constants.ts).
 
-   - Description: A booklist app built with TypeScript that randomly generates ISBN for each book. The books are saved in local storage.
-   - Techs: HTML, CSS, TypeScript
-   - [GitHub](https://github.com/ifeola/booklist-typescript) | [Demo](https://booklist-abayome.netlify.app/)
+Each case study is intentionally written from what is actually in the linked repository. The School Result Checking project is a backend API without a public demo; the URL Shortener is marked as in progress because the auth and data layers are built but the short-link endpoints are not.
 
-5. **Todo App (React)**
-   - Description: A Todo app built with React. You can save, edit, delete, and mark todos as completed.
-   - Techs: React
-   - [GitHub](https://github.com/ifeola/todo-react-app) | [Demo](https://booklist-abayome.netlify.app/)
+## Accessibility and SEO
 
-## Getting Started
+- Semantic landmarks, one `h1`, ordered headings and a skip link.
+- Visible `:focus-visible` styles and 44 px minimum tap targets for primary actions.
+- Mobile menu closes on Escape and locks background scroll.
+- `prefers-reduced-motion` disables non-essential animation.
+- Title, description, canonical, Open Graph, Twitter card and `Person` JSON-LD in [`index.html`](index.html).
+- `public/robots.txt`, `public/sitemap.xml` and a generated 1200×630 social image at `public/og.png`.
 
-To get a local copy up and running, follow these steps:
+If the site moves to a custom domain, update the canonical and Open Graph URLs in `index.html` and `public/og.svg`, then regenerate `public/og.png`.
 
-### Prerequisites
+## Deployment
 
-- Node.js
-- npm
+The project deploys as a static Vite site (Netlify or any static host):
 
-### Installation
-
-1. Clone the repository:
-
-   ```sh
-   git clone https://github.com/your-username/my-portfolio.git
-
-   ```
-
-2. Navigate to the project directory:
-
-   ```sh
-   cd my-portfolio
-   ```
-
-3. Install dependencies:
-
-   ```sh
-   npm install
-   ```
-
-4. Start the development server:
-   ```sh
-   npm run dev
-   ```
-
-discuss my projects, skills, or just say hello, please feel free to reach out.
+- Build command: `npm run build`
+- Publish directory: `dist`
 
 ## Contact
-
-I'm excited to connect with potential employers, mentors, and fellow developers! If you'd like to discuss my projects, skills, or just say hello, please feel free to reach out.
 
 - Email: arogunmasaabayomi95@gmail.com
 - [GitHub](https://github.com/ifeola)
 - [LinkedIn](https://www.linkedin.com/in/abayomi-arogunmasa-75254a134/)
-- [Twitter](https://x.com/abayomi_codes)
-
-Thank you for visiting my portfolio!
+- [X / Twitter](https://x.com/abayomi_codes)

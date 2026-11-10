@@ -1,33 +1,45 @@
-.skill__list {
-  display: grid;
+.skill__item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1.6rem;
+	min-height: 13rem;
+	padding: 2.4rem 1.2rem;
+	border: 1px solid var(--white-transparent);
+	border-radius: 8px;
+	background-color: transparent;
+	transition:
+		border-color var(--transition-duration) var(--transition-timing),
+		background-color var(--transition-duration) var(--transition-timing);
 }
 
-.skill__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2.4rem;
-  padding-block: 2em;
-  border: 1px solid var(--white-transparent);
-  border-radius: 8px;
+.skill__item:hover {
+	border-color: var(--primary-color);
+	background-color: var(--primary-transparent-2);
+}
 
-  svg {
-    width: 8rem;
-    fill: var(--primary-color);
+.skill__icon {
+	display: grid;
+	place-items: center;
+}
 
-    .st1 {
-      fill: var(--bg-color);
-    }
-  }
+.skill__icon svg {
+	width: 4.8rem;
+	height: 4.8rem;
+	fill: var(--primary-color);
+}
 
-  span {
-    font-size: 1.4rem;
-    font-family: var(--Switzer-bold);
-  }
+.skill__item > span:last-child {
+	font-size: 1.3rem;
+	font-weight: 600;
+	text-align: center;
+	color: var(--white-color);
 }
 
 @media (width >= 768px) {
-  .skill__item img {
-    width: 8rem;
-  }
+	.skill__icon svg {
+		width: 6.4rem;
+		height: 6.4rem;
+	}
 }

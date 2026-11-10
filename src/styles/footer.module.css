@@ -1,54 +1,100 @@
 .footer {
-  width: 100%;
-  max-width: 1440px;
+	width: 100%;
+	max-width: 1440px;
+	margin-inline: auto;
 
-  border-top: 1px solid var(--primary-transparent-3);
-  border-top-style: dashed;
-  padding-inline: 1rem;
+	border-top: 1px solid var(--primary-transparent-3);
+	border-top-style: dashed;
+	padding-inline: 1rem;
 }
 
 .divider {
-  position: relative;
-  margin: 0 auto;
-  width: 100%;
+	position: relative;
+	margin-inline: auto;
+	width: 100%;
 
-  margin-inline: auto;
-
-  border-left: 1px solid var(--primary-transparent-3);
-  border-right: 1px solid var(--primary-transparent-3);
-  border-left-style: dashed;
-  border-right-style: dashed;
+	border-left: 1px solid var(--primary-transparent-3);
+	border-right: 1px solid var(--primary-transparent-3);
+	border-left-style: dashed;
+	border-right-style: dashed;
 }
 
 .footer__container {
-  margin: 0 auto;
-  padding-block: 2.4rem;
-  padding-inline: 1rem;
+	margin-inline: auto;
+	padding-block: 2.4rem;
+	padding-inline: 1rem;
+	display: flex;
+	flex-direction: column;
+	gap: 1.2rem;
+}
+
+.footer__brand {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 0.8rem 1.2rem;
+}
+
+.footer__logo {
+	display: inline-flex;
+}
+
+.footer__logo svg {
+	width: 2rem;
+	height: 2rem;
+	fill: var(--primary-color);
+	display: block;
+}
+
+.footer__name {
+	font-size: 1.4rem;
+	font-weight: 700;
+	color: var(--white-color);
+}
+
+.footer__tagline {
+	font-size: 1.1rem;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--text-color);
 }
 
 .footer__items {
-  width: 100%;
-  font-size: 1.2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: var(--text-color);
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 1rem;
+	font-size: 1.2rem;
+	color: var(--text-color);
 }
 
-.name {
-  font-weight: 600;
+.footer__top {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.6rem;
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: var(--primary-color);
+	white-space: nowrap;
+}
+
+.footer__top:hover {
+	text-decoration: underline;
+	text-underline-offset: 0.3rem;
 }
 
 @media (width >= 768px) {
-  .footer {
-    padding-inline: 0;
-  }
+	.footer {
+		padding-inline: 0;
+	}
 
-  .divider {
-    width: 88%;
-  }
+	.divider {
+		width: 88%;
+	}
 
-  .footer__items {
-    font-size: 1.4rem;
-  }
+	.footer__items {
+		font-size: 1.4rem;
+	}
 }

@@ -9,27 +9,64 @@
 	justify-content: center;
 }
 
-.hero__links {
-	width: 100%;
-
-	display: flex;
-	flex-direction: column;
-	gap: 2.4rem;
-	margin-block-start: 4rem;
+.hero__wrapper {
+	display: grid;
+	gap: 0;
+	align-items: end;
 }
 
 .hero__heading {
 	margin-block: 2.4rem;
+	max-width: 18ch;
+	font-size: var(--h1-mobile-fz);
 
 	span {
 		color: var(--text-color);
 	}
 }
 
-.social__list {
+.hero__content {
+	max-width: 64rem;
+}
+
+.hero__proof {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.8rem 1.6rem;
+	margin-block-start: 1.6rem;
+	font-size: 1.2rem;
+	color: var(--text-color);
+}
+
+.hero__proof li {
 	display: flex;
 	align-items: center;
+	gap: 1.2rem;
+}
+
+.hero__proof li:not(:first-child)::before {
+	content: "";
+	flex: none;
+	width: 0.4rem;
+	height: 0.4rem;
+	border-radius: 100%;
+	background-color: var(--primary-color);
+}
+
+.hero__links {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 1.2rem;
+	margin-block-start: 3.2rem;
+}
+
+.social__list {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
 	gap: 1.6rem;
+	margin-block-start: 2.4rem;
 }
 
 .circle {
@@ -52,13 +89,30 @@
 	}
 }
 
+/* Appears once the work section reaches the viewport. */
 .logo__roll {
 	position: fixed;
 	right: 4%;
 	bottom: 8%;
 	z-index: 100;
+	width: 4.8rem;
+	height: 4.8rem;
+	display: grid;
+	place-items: center;
+	border-radius: 100%;
+	background-color: var(--bg-color);
+	border: 1px solid var(--white-transparent);
+
 	scale: 0;
-	transition: scale var(--transition-duration) var(--transition-timing);
+	visibility: hidden;
+	transition:
+		scale var(--transition-duration) var(--transition-timing),
+		visibility 0s linear var(--transition-duration),
+		border-color var(--transition-duration) var(--transition-timing);
+}
+
+.logo__roll:hover {
+	border-color: var(--primary-color);
 }
 
 .logo__roll svg {
@@ -71,6 +125,19 @@
 
 .scroll__active {
 	scale: 1;
+	visibility: visible;
+	transition:
+		scale var(--transition-duration) var(--transition-timing),
+		visibility 0s linear;
+}
+
+.hero__sentinel {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 1px;
+	height: 1px;
+	pointer-events: none;
 }
 
 @keyframes rotate {
@@ -83,11 +150,15 @@
 }
 
 @media (width >= 768px) {
+	.hero__heading {
+		max-width: 20ch;
+	}
+
 	.hero__links {
 		flex-direction: row;
 		width: fit-content;
-		align-items: end;
-		gap: 16rem;
+		align-items: center;
+		gap: 1.6rem;
 	}
 
 	.circle {

@@ -1,16 +1,39 @@
 .desktop__links {
-  display: none;
+	display: none;
 }
 
 @media (width >= 768px) {
-  .desktop__links,
-  .desktop__list {
-    display: flex;
-    align-items: center;
-    gap: 2.4rem;
-  }
+	.desktop__links,
+	.desktop__list {
+		display: flex;
+		align-items: center;
+		gap: 2.4rem;
+	}
 
-  .desktop__link {
-    font-size: var(--link-fz);
-  }
+	.desktop__link {
+		position: relative;
+		padding-block: 0.8rem;
+		font-size: var(--link-fz);
+		color: var(--text-color);
+		transition: color var(--transition-duration) var(--transition-timing);
+	}
+
+	.desktop__link:hover {
+		color: var(--white-color);
+	}
+
+	.desktop__link[aria-current="location"] {
+		color: var(--primary-color);
+	}
+
+	.desktop__link[aria-current="location"]::after {
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		height: 2px;
+		border-radius: 2px;
+		background-color: var(--primary-color);
+	}
 }
