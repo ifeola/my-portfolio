@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://abayome.netlify.app/sitemap.xml

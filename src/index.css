@@ -182,20 +182,17 @@ button {
   font-size: 1.4rem;
   font-weight: 700;
   transform: translateY(-150%);
-  transition:
-    top 150ms ease,
-    transform 150ms ease;
 }
 
 /* Sits just under the header so it never covers the logo or menu button. */
-.skip-link:focus {
-  top: 7.2rem;
+.skip-link:focus-visible {
+  top: 8.8rem;
   transform: translateY(0);
 }
 
 @media (width >= 768px) {
-  .skip-link:focus {
-    top: 8.8rem;
+  .skip-link:focus-visible {
+    top: 10rem;
   }
 }
 
