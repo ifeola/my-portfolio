@@ -1,5 +1,7 @@
 import Diamond from "../components/Diamond";
+import SectionLabel from "../components/SectionLabel";
 import { about } from "../utils/constants";
+import { revealDelay } from "../utils/motion";
 import style from "../styles/about.module.css";
 
 export default function About() {
@@ -9,11 +11,11 @@ export default function About() {
 			<Diamond right="-0.4rem" />
 
 			<div className="container about__container">
-				<p className="subtitle section-subtitle">About</p>
+				<SectionLabel index="02">About</SectionLabel>
 
 				<div className={style.about__bg}>
 					<div className={style.about__content}>
-						<div className={style.about__content_left}>
+						<div className={style.about__content_left} data-reveal>
 							<h2 id="about-title" className={style.about__heading}>
 								{about.heading}
 							</h2>
@@ -24,7 +26,11 @@ export default function About() {
 							))}
 						</div>
 
-						<div className={style.about__img_bg}>
+						<div
+							className={style.about__img_bg}
+							data-reveal
+							style={revealDelay(120)}
+						>
 							<img
 								src="/assets/avatar.svg"
 								alt="Illustration of a developer working at a desk."
@@ -38,8 +44,13 @@ export default function About() {
 					</div>
 
 					<dl className={style.about__facts}>
-						{about.facts.map((fact) => (
-							<div className={style.about__fact} key={fact.label}>
+						{about.facts.map((fact, i) => (
+							<div
+								className={style.about__fact}
+								key={fact.label}
+								data-reveal
+								style={revealDelay(i * 55)}
+							>
 								<dt>{fact.label}</dt>
 								<dd>{fact.value}</dd>
 							</div>

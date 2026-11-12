@@ -12,6 +12,34 @@
 	list-style: none;
 }
 
+.skills__list li:nth-child(2) {
+	--reveal-delay: 60ms;
+}
+
+.skills__list li:nth-child(3) {
+	--reveal-delay: 120ms;
+}
+
+.skills__list li:nth-child(4) {
+	--reveal-delay: 180ms;
+}
+
+.skills__list li:nth-child(5) {
+	--reveal-delay: 240ms;
+}
+
+.skills__list li:nth-child(6) {
+	--reveal-delay: 300ms;
+}
+
+.skills__list li:nth-child(7) {
+	--reveal-delay: 360ms;
+}
+
+.skills__list li:nth-child(8) {
+	--reveal-delay: 420ms;
+}
+
 .skills__groups {
 	display: grid;
 	grid-template-columns: 1fr;

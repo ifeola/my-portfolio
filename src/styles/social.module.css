@@ -16,7 +16,9 @@
 	width: 1.6rem;
 	height: 1.6rem;
 	fill: var(--text-color);
-	transition: fill var(--transition-duration) var(--transition-timing);
+	transition:
+		fill var(--transition-duration) var(--transition-timing),
+		transform 300ms var(--ease-out-expo);
 }
 
 .social__link:hover,
@@ -27,4 +29,5 @@
 .social__link:hover svg,
 .social__link:active svg {
 	fill: var(--accent-color);
+	transform: translate(0.2rem, -0.2rem);
 }

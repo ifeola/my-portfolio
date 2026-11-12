@@ -39,13 +39,13 @@ export const navLinks: NavLink[] = [
 
 export const hero = {
 	eyebrow: `Full-stack developer · ${LOCATION}`,
-	titleLead: "I build software that makes ",
-	titleAccent: "public services easier to use.",
+	titleLead: "I build websites that make ",
+	titleAccent: "complicated things feel simple.",
 	summary:
-		"I turn paper-heavy workflows into fast, reliable web apps with React, TypeScript, Node.js and PostgreSQL — for schools, public teams and NGOs.",
+		"I design and build fast, accessible sites and web apps with React, TypeScript, Node.js and PostgreSQL — from the first screen to the database.",
 	proof: [
-		"B.Sc. First Class",
-		"Former secondary school teacher",
+		"B.Sc. Second Class Upper",
+		"Frontend + backend",
 		"Open to full-time & contract roles",
 	],
 	primary: { label: "View selected work", href: "#work" },
@@ -56,20 +56,24 @@ export const hero = {
 } as const;
 
 export const about = {
-	heading: "I started in a classroom. I build for the people in it.",
+	heading: "I started in a classroom. Now I build for the web.",
 	paragraphs: [
-		"I taught secondary school in Nigeria. It taught me the real test of any tool: whether someone with a full timetable and a slow phone can use it without being trained twice.",
-		"I also hold a First Class B.Sc. in Local Government and Development Studies, so I understand how public institutions actually run — the constraints, the paperwork, and the people carrying it. That is the context I design for: schools, local government, and NGOs doing important work with too few hands.",
-		"Today I build full-stack applications with React, TypeScript, Node.js, Express and PostgreSQL. I care about correct data, clear interfaces, and software that survives contact with real users.",
+		"I taught secondary school in Nigeria. It taught me the real test of any product: whether someone with a full timetable and a slow phone can use it without being trained twice.",
+		"I also hold a Second Class Upper B.Sc. in Local Government and Development Studies, so I understand how institutions actually run — the constraints, the paperwork, and the people carrying it. I bring that context to every project, whatever the industry.",
+		"Today I build full-stack websites and applications with React, TypeScript, Node.js, Express and PostgreSQL. I care about correct data, clear interfaces, and software that survives real users. I'm still learning — currently going deeper into testing, system design and performance — and I'd rather show the work than overstate it.",
 	],
 	facts: [
 		{ label: "Based in", value: `${LOCATION} · ${TIMEZONE}` },
 		{
 			label: "Education",
-			value: "B.Sc. First Class, Local Government & Development Studies",
+			value: "B.Sc. Second Class Upper, Local Government & Development Studies",
 		},
 		{ label: "Before code", value: "Secondary school teacher" },
-		{ label: "Focus", value: "Education, public sector and NGOs" },
+		{ label: "Focus", value: "Full-stack websites and web apps" },
+		{
+			label: "Currently learning",
+			value: "Testing, system design and performance",
+		},
 		{ label: "Availability", value: "Full-time roles and contract work" },
 	],
 } as const;
@@ -106,7 +110,7 @@ export const skillGroups = [
 export const contact = {
 	eyebrow: "Contact",
 	heading: "Have a problem worth building for?",
-	body: "I'm open to full-time roles and contract work in education, public sector and NGOs. If you're modernising a process that still runs on paper, spreadsheets or WhatsApp, send me a short note about it — I reply within two working days.",
+	body: "I'm open to full-time roles and contract work. If you're building a website, replacing an internal tool, or fixing a process that still runs on paper and spreadsheets, send me a short note about it — I reply within two working days.",
 	primary: {
 		label: "Email me",
 		href: mailtoLink(

@@ -22,11 +22,7 @@
 		color: var(--white-color);
 	}
 
-	.desktop__link[aria-current="location"] {
-		color: var(--primary-color);
-	}
-
-	.desktop__link[aria-current="location"]::after {
+	.desktop__link::after {
 		content: "";
 		position: absolute;
 		left: 0;
@@ -34,6 +30,18 @@
 		bottom: 0;
 		height: 2px;
 		border-radius: 2px;
-		background-color: var(--primary-color);
+		background-color: currentColor;
+		transform: scaleX(0);
+		transform-origin: 0 50%;
+		transition: transform 350ms var(--ease-out-expo);
+	}
+
+	.desktop__link:hover::after,
+	.desktop__link[aria-current="location"]::after {
+		transform: scaleX(1);
+	}
+
+	.desktop__link[aria-current="location"] {
+		color: var(--primary-color);
 	}
 }

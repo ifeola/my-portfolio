@@ -11,6 +11,11 @@
 	height: 3.2rem;
 	fill: var(--primary-color);
 	flex-shrink: 0;
+	transition: transform 600ms var(--ease-out-expo);
+}
+
+.logo__bg:hover .logo__mark {
+	transform: rotate(45deg);
 }
 
 .logo__text {

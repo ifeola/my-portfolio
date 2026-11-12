@@ -16,6 +16,7 @@
 	overflow: hidden;
 	border: 1px solid var(--white-transparent);
 	background-color: var(--content-bg);
+	transition: border-color var(--transition-duration) var(--transition-timing);
 }
 
 .project__media img {
@@ -23,6 +24,7 @@
 	height: 100%;
 	object-fit: cover;
 	object-position: top center;
+	transition: transform 900ms var(--ease-out-expo);
 }
 
 /* Designed fallback used while a project has no UI screenshot. */
@@ -31,9 +33,10 @@
 	height: 100%;
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
+	justify-content: space-between;
 	gap: 1.6rem;
 	padding: 2.4rem;
+	padding-block-end: 6rem;
 	background-color: var(--content-bg);
 	background-image:
 		linear-gradient(var(--primary-transparent-2) 1px, transparent 1px),
@@ -44,11 +47,19 @@
 }
 
 .project__cover_index {
-	font-size: clamp(4.8rem, 12vw, 9.6rem);
+	font-size: clamp(6.4rem, 16vw, 11rem);
 	font-weight: 700;
 	line-height: 1;
 	letter-spacing: -0.04em;
 	color: var(--primary-color);
+	-webkit-text-stroke: 1px var(--primary-color);
+	transition: transform 900ms var(--ease-out-expo);
+}
+
+@supports (-webkit-text-stroke: 1px currentColor) {
+	.project__cover_index {
+		color: transparent;
+	}
 }
 
 .project__cover_title {
@@ -84,8 +95,20 @@
 	border-color: var(--accent-color);
 }
 
-.project__status[data-status="Backend API"] {
-	color: var(--text-color);
+.project__status[data-status="Full stack"] {
+	color: var(--primary-color);
+	border-color: var(--primary-color);
+}
+
+/* The media badge is hidden on desktop, where the content card overlaps it. */
+.project__meta {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.project__status_content {
+	display: none;
 }
 
 .project__content {
@@ -98,6 +121,7 @@
 	border-radius: 8px;
 	border: 1px solid var(--white-transparent);
 	background-color: var(--bg-color);
+	transition: border-color var(--transition-duration) var(--transition-timing);
 }
 
 .project__index {
@@ -229,6 +253,11 @@
 	width: 1.6rem;
 	height: 1.6rem;
 	fill: currentColor;
+	transition: transform 300ms var(--ease-out-expo);
+}
+
+.project__links a:hover svg {
+	transform: translate(0.3rem, -0.3rem);
 }
 
 .project__note {
@@ -237,6 +266,24 @@
 	line-height: 1.6;
 	color: var(--text-color);
 	opacity: 0.8;
+}
+
+@media (hover: hover) and (pointer: fine) {
+	.project:hover .project__media {
+		border-color: var(--primary-transparent-3);
+	}
+
+	.project:hover .project__media img {
+		transform: scale(1.035);
+	}
+
+	.project:hover .project__cover_index {
+		transform: translateX(0.4rem);
+	}
+
+	.project:hover .project__content {
+		border-color: var(--primary-transparent-3);
+	}
 }
 
 @media (width >= 900px) {
@@ -258,6 +305,15 @@
 		width: 100%;
 		margin-block-start: 0;
 		padding: 3.2rem;
+	}
+
+	.project__status_media {
+		display: none;
+	}
+
+	.project__status_content {
+		position: static;
+		display: inline-flex;
 	}
 
 	.project__title {

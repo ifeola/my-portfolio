@@ -42,7 +42,12 @@ export default function CopyEmail() {
 
 	return (
 		<>
-			<button type="button" className={style.copy} onClick={copyEmail}>
+			<button
+				type="button"
+				className={style.copy}
+				data-copied={copied}
+				onClick={copyEmail}
+			>
 				{copied ? "Copied" : "Copy email"}
 			</button>
 			<span role="status" className="sr-only">

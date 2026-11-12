@@ -6,9 +6,12 @@ import Projects from "./pages/Projects";
 import About from "./pages/About";
 import Skills from "./pages/Skills";
 import Contact from "./pages/Contact";
+import { useReveal } from "./hooks/useReveal";
 import style from "./styles/main.module.css";
 
 function App() {
+	useReveal();
+
 	return (
 		<>
 			<a className="skip-link" href="#main">

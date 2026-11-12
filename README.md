@@ -1,6 +1,6 @@
 # Forgentik — Abayomi Arogunmasa
 
-A portfolio for full-stack work in education and the public sector. The site is a single-page React app with three documented case studies, a short about section, a focused stack list and a direct contact flow.
+A portfolio for full-stack web work. The site is a single-page React app with three documented case studies, a short about section, a focused stack list and a direct contact flow.
 
 Live site: [abayome.netlify.app](https://abayome.netlify.app/)
 
@@ -50,14 +50,14 @@ npm run preview
 
 Case-study copy and links are centralised in [`src/utils/data.ts`](src/utils/data.ts). Add or edit a project there and the card renders automatically. Section copy, nav labels and contact details live in [`src/utils/constants.ts`](src/utils/constants.ts).
 
-Each case study is intentionally written from what is actually in the linked repository. The School Result Checking project is a backend API without a public demo; the URL Shortener is marked as in progress because the auth and data layers are built but the short-link endpoints are not.
+Each case study is intentionally written from what is actually in the linked repository. The School Result Checking project is a full-stack app — an Express/PostgreSQL API plus an EJS report-card view rendered to PDF — but it has no public demo because it needs a seeded database. The URL Shortener is marked as in progress because the auth and data layers are built but the short-link endpoints are not.
 
 ## Accessibility and SEO
 
 - Semantic landmarks, one `h1`, ordered headings and a skip link.
 - Visible `:focus-visible` styles and 44 px minimum tap targets for primary actions.
 - Mobile menu closes on Escape and locks background scroll.
-- `prefers-reduced-motion` disables non-essential animation.
+- Scroll reveals and hover motion respect `prefers-reduced-motion`.
 - Title, description, canonical, Open Graph, Twitter card and `Person` JSON-LD in [`index.html`](index.html).
 - `public/robots.txt`, `public/sitemap.xml` and a generated 1200×630 social image at `public/og.png`.
 

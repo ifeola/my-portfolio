@@ -1,4 +1,4 @@
-export type ProjectStatus = "Live" | "Backend API" | "In progress";
+export type ProjectStatus = "Live" | "Full stack" | "In progress";
 
 export type ProjectImage = {
 	src: string;
@@ -35,11 +35,11 @@ export const caseStudies: CaseStudy[] = [
 		id: "school-results",
 		index: "01",
 		title: "School Result Checking",
-		tagline: "Term results, generated as print-ready PDFs.",
+		tagline: "Report cards, from raw scores to print-ready PDFs.",
 		problem:
 			"Result day ran on paper and retyping. Teachers copied scores from notebooks into spreadsheets; staff then retyped them into report cards. Every extra copy was another chance for a mark to change.",
 		solution:
-			"A Node.js and PostgreSQL API that stores students, classes, terms and assessments once, calculates totals and class positions, then renders a print-ready A4 result card as a PDF from a single request. Admins manage records; students can only reach their own.",
+			"A full-stack TypeScript app. An Express and PostgreSQL layer stores students, classes, terms and assessments once and calculates totals and class positions. An EJS report-card view turns that data into a print-ready A4 PDF through Puppeteer. Admins manage records; students can only reach their own results.",
 		challenge: {
 			title: "One result, seven tables",
 			body: "A result card pulls from students, assessments, subjects, academic periods, terms, enrollments and classes. The query builds term and session filters dynamically while defaulting to the current academic period, so every card is scoped to the right student and term — and positions stay consistent with the scores shown.",
@@ -49,12 +49,13 @@ export const caseStudies: CaseStudy[] = [
 			"Node.js",
 			"Express",
 			"PostgreSQL",
-			"JWT",
+			"EJS",
 			"Puppeteer",
+			"JWT",
 		],
-		status: "Backend API",
+		status: "Full stack",
 		repo: "https://github.com/ifeola/School-Result-Checking-System",
-		note: "Source available. No public demo — the API needs a seeded PostgreSQL instance.",
+		note: "Source available. No public demo — the app needs a seeded PostgreSQL instance.",
 	},
 	{
 		id: "url-shortener",

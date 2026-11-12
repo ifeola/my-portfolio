@@ -2,6 +2,8 @@ import Diamond from "../components/Diamond";
 import Button from "../components/Button";
 import Social from "../components/Social";
 import CopyEmail from "../components/CopyEmail";
+import SectionLabel from "../components/SectionLabel";
+import { revealDelay } from "../utils/motion";
 import {
 	EMAIL,
 	RESUME_PATH,
@@ -18,10 +20,10 @@ export default function Contact() {
 			<Diamond right="-0.4rem" />
 
 			<div className="container">
-				<p className="subtitle">{contact.eyebrow}</p>
+				<SectionLabel index="04">{contact.eyebrow}</SectionLabel>
 
 				<div className={style.contact__content}>
-					<div className={style.contact__intro}>
+					<div className={style.contact__intro} data-reveal>
 						<h2 id="contact-title">{contact.heading}</h2>
 						<p className="body-copy">{contact.body}</p>
 
@@ -45,7 +47,12 @@ export default function Contact() {
 						</ul>
 					</div>
 
-					<aside className={style.contact__card} aria-label="Contact details">
+					<aside
+						className={style.contact__card}
+						aria-label="Contact details"
+						data-reveal
+						style={revealDelay(120)}
+					>
 						<p className={style.contact__label}>Email</p>
 						<a href={mailtoLink("Project enquiry — Forgentik")} className={style.contact__email}>
 							{EMAIL}

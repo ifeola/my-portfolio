@@ -1,5 +1,6 @@
 import type { CaseStudy } from "../utils/data";
 import ArrowRightTop from "./ArrowRIghtTop";
+import { revealDelay } from "../utils/motion";
 import style from "../styles/project.module.css";
 
 type ProjectProps = {
@@ -24,7 +25,11 @@ export default function Project({ project }: ProjectProps) {
 	} = project;
 
 	return (
-		<li className={style.project}>
+		<li
+			className={style.project}
+			data-reveal
+			style={revealDelay((Number(index) - 1) * 90)}
+		>
 			<article className={style.project__grid} aria-labelledby={`${id}-title`}>
 				<div className={style.project__media}>
 					{image ? (
@@ -42,15 +47,26 @@ export default function Project({ project }: ProjectProps) {
 							<span className={style.project__cover_title}>{title}</span>
 						</div>
 					)}
-					<span className={style.project__status} data-status={status}>
+					<span
+						className={`${style.project__status} ${style.project__status_media}`}
+						data-status={status}
+					>
 						{status}
 					</span>
 				</div>
 
 				<div className={style.project__content}>
-					<p className={style.project__index} aria-hidden="true">
-						{index}
-					</p>
+					<div className={style.project__meta}>
+						<p className={style.project__index} aria-hidden="true">
+							{index}
+						</p>
+						<span
+							className={`${style.project__status} ${style.project__status_content}`}
+							data-status={status}
+						>
+							{status}
+						</span>
+					</div>
 					<h3 className={style.project__title} id={`${id}-title`}>
 						{title}
 					</h3>

@@ -44,6 +44,11 @@
 	border: 1px solid var(--white-transparent);
 	border-radius: 8px;
 	background-color: var(--content-bg);
+	background-image: radial-gradient(
+		120% 80% at 100% 0%,
+		var(--primary-transparent-2),
+		transparent 60%
+	);
 }
 
 .contact__label {
@@ -88,11 +93,27 @@
 	font-weight: 600;
 	color: var(--primary-color);
 	cursor: pointer;
-	transition: background-color var(--transition-duration) var(--transition-timing);
+	transition:
+		color var(--transition-duration) var(--transition-timing),
+		border-color var(--transition-duration) var(--transition-timing),
+		background-color var(--transition-duration) var(--transition-timing);
 }
 
 .copy:hover {
 	background-color: var(--primary-transparent-3);
+}
+
+.copy[data-copied="true"] {
+	color: var(--accent-color);
+	border-color: var(--accent-color);
+	background-color: var(--accent-transparent);
+	animation: copied-pop 300ms var(--ease-out-expo);
+}
+
+@keyframes copied-pop {
+	50% {
+		transform: scale(0.96);
+	}
 }
 
 .contact__divider {

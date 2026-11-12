@@ -4,6 +4,7 @@ import LogoOnly from "../components/LogoOnly";
 import Button from "../components/Button";
 import Social from "../components/Social";
 import { hero, socialLinks } from "../utils/constants";
+import { revealDelay } from "../utils/motion";
 import style from "../styles/hero.module.css";
 
 export default function Hero() {
@@ -30,15 +31,26 @@ export default function Hero() {
 			<div className={style.circle} aria-hidden="true" />
 
 			<div className="container">
-				<p className="subtitle">{hero.eyebrow}</p>
+				<p className="subtitle" data-reveal>
+					{hero.eyebrow}
+				</p>
 
 				<div className={style.hero__wrapper}>
-					<h1 className={style.hero__heading} id="hero-title">
+					<h1
+						className={style.hero__heading}
+						id="hero-title"
+						data-reveal
+						style={revealDelay(90)}
+					>
 						{hero.titleLead}
 						<span>{hero.titleAccent}</span>
 					</h1>
 
-					<div className={style.hero__content}>
+					<div
+						className={style.hero__content}
+						data-reveal
+						style={revealDelay(180)}
+					>
 						<p className="body-copy">{hero.summary}</p>
 
 						<ul className={style.hero__proof}>

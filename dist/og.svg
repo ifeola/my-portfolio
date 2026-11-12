@@ -19,10 +19,11 @@
   </g>
   <text x="144" y="98" fill="#e6e6e6" font-family="Inter, sans-serif" font-size="22" font-weight="700" letter-spacing="5">FORGENTIK</text>
 
-  <text x="80" y="292" fill="#f2f2f2" font-family="Inter, sans-serif" font-size="60" font-weight="700" letter-spacing="-1.5">I build software that makes</text>
-  <text x="80" y="368" fill="#00b3e6" font-family="Inter, sans-serif" font-size="60" font-weight="700" letter-spacing="-1.5">public services easier to use.</text>
+  <text x="80" y="268" fill="#f2f2f2" font-family="Inter, sans-serif" font-size="58" font-weight="700" letter-spacing="-1.5">I build websites that make</text>
+  <text x="80" y="334" fill="#00b3e6" font-family="Inter, sans-serif" font-size="58" font-weight="700" letter-spacing="-1.5">complicated things</text>
+  <text x="80" y="400" fill="#00b3e6" font-family="Inter, sans-serif" font-size="58" font-weight="700" letter-spacing="-1.5">feel simple.</text>
 
-  <text x="80" y="452" fill="#b8b8b8" font-family="Inter, sans-serif" font-size="26">Abayomi Arogunmasa · Full-stack developer, Ibadan</text>
+  <text x="80" y="456" fill="#b8b8b8" font-family="Inter, sans-serif" font-size="26">Abayomi Arogunmasa · Full-stack developer, Ibadan</text>
 
   <line x1="80" y1="512" x2="1120" y2="512" stroke="#00b3e6" stroke-opacity="0.35" stroke-dasharray="6 6" />
 

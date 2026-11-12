@@ -45,6 +45,21 @@
 	width: 100%;
 	object-fit: cover;
 	object-position: center;
+	transition: transform 1000ms var(--ease-out-expo);
+}
+
+.has-js .about__img_bg[data-reveal] .about__img {
+	transform: scale(1.06);
+}
+
+.has-js .about__img_bg[data-reveal].is-visible .about__img {
+	transform: scale(1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+	.about__img_bg:hover .about__img {
+		transform: scale(1.03);
+	}
 }
 
 .about__facts {

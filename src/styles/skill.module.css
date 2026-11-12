@@ -28,6 +28,13 @@
 	width: 4.8rem;
 	height: 4.8rem;
 	fill: var(--primary-color);
+	transition: transform 450ms var(--ease-out-expo);
+}
+
+@media (hover: hover) and (pointer: fine) {
+	.skill__item:hover .skill__icon svg {
+		transform: translateY(-0.3rem) scale(1.06);
+	}
 }
 
 .skill__item > span:last-child {
