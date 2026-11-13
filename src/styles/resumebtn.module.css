@@ -14,11 +14,14 @@
 
 	transition:
 		background-color var(--transition-duration) var(--transition-timing),
-		color var(--transition-duration) var(--transition-timing);
+		color var(--transition-duration) var(--transition-timing),
+		transform var(--transition-duration) var(--ease-out-expo);
 }
 
 .resume__btn:hover {
-	background-color: var(--primary-transparent-3);
+	background-color: var(--primary-color);
+	color: var(--bg-color);
+	transform: translateY(-0.2rem);
 }
 
 @media (width >= 768px) {

@@ -7,9 +7,9 @@ Live site: [abayome.netlify.app](https://abayome.netlify.app/)
 ## What is here
 
 - **Hero** — what I build, who I build it for, and clear links to work and email.
-- **Selected work** — three case studies: School Result Checking, URL Shortener and Expenses Tracker. Each card covers the problem, the solution, the stack, one key technical challenge, and links to source/demo where they exist.
+- **Selected work** — three case studies: School Result Checking, URL Shortener and Expenses Tracker. Each card covers the problem, the solution, the stack, one key technical challenge, a cover image, and links to source/demo where they exist.
 - **About** — the path from secondary-school teaching and a public-sector degree into full-stack development.
-- **Stack** — the tools used end to end, not a logo wall.
+- **Stack** — what I build (sites, dashboards, APIs), the core tools used end to end, and the wider toolbox.
 - **Contact** — email, copy-to-clipboard, social links and a résumé download.
 
 ## Built with

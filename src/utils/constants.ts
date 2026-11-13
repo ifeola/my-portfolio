@@ -28,13 +28,14 @@ export type NavLink = {
   label: string;
   href: `#${string}`;
   id: string;
+  index: string;
 };
 
 export const navLinks: NavLink[] = [
-  { label: "Work", href: "#work", id: "work" },
-  { label: "About", href: "#about", id: "about" },
-  { label: "Stack", href: "#stack", id: "stack" },
-  { label: "Contact", href: "#contact", id: "contact" },
+  { label: "Work", href: "#work", id: "work", index: "01" },
+  { label: "About", href: "#about", id: "about", index: "02" },
+  { label: "Stack", href: "#stack", id: "stack", index: "03" },
+  { label: "Contact", href: "#contact", id: "contact", index: "04" },
 ];
 
 export const hero = {
@@ -93,30 +94,53 @@ export const projectsIntro = {
 
 export const skillsIntro = {
   eyebrow: "Stack",
-  heading: "A focused stack, used end to end.",
+  heading: "What I build, and the tools I build it with.",
   summary:
     "I'd rather know a few tools well than twenty superficially. I build the interface, the API and the data layer — and I can debug them when something breaks in production.",
 };
 
+/** The kinds of work he takes on, kept general so it is not boxed into one industry. */
+export const services = {
+  title: "What I build",
+  items: [
+    {
+      title: "Sites and landing pages",
+      body: "Fast, responsive pages that load quickly, read clearly and are simple to hand over.",
+    },
+    {
+      title: "Dashboards and internal tools",
+      body: "Real workflows — tables, filters, forms and the state behind them, not static mockups.",
+    },
+    {
+      title: "APIs and data services",
+      body: "Typed Node and Express backends with PostgreSQL, authentication and migrations.",
+    },
+  ],
+} as const;
+
+export const coreToolsLabel = "Core tools";
+export const toolboxLabel = "Also in the toolbox";
+
 export const skillGroups = [
   {
-    label: "Frontend",
+    label: "Backend & data",
     items: [
-      "React",
-      "TypeScript",
-      "JavaScript (ES6+)",
-      "HTML5",
-      "CSS3",
-      "Tailwind CSS",
+      "Node.js",
+      "Express",
+      "PostgreSQL",
+      "Drizzle ORM",
+      "REST APIs",
+      "JWT auth",
+      "SQL",
     ],
   },
   {
-    label: "Backend & data",
-    items: ["Node.js", "Express", "PostgreSQL", "REST APIs", "JWT auth", "SQL"],
+    label: "Tooling",
+    items: ["Vite", "Postman", "Linux", "ESLint", "Prettier"],
   },
   {
-    label: "Tooling",
-    items: ["Git", "GitHub", "Vite", "Postman", "Linux"],
+    label: "In the projects",
+    items: ["EJS", "Puppeteer", "better-auth", "localStorage", "Netlify"],
   },
 ] as const;
 

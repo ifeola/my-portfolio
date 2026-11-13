@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800" role="img" aria-label="Illustration of a report card document with subject scores and a class position badge">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#00b3e6" stroke-opacity="0.09" />
+    </pattern>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00b3e6" stop-opacity="0.22" />
+      <stop offset="100%" stop-color="#00b3e6" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="page" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0%" stop-color="#f3f6fb" />
+      <stop offset="100%" stop-color="#dde4ef" />
+    </linearGradient>
+    <linearGradient id="badge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00b3e6" />
+      <stop offset="100%" stop-color="#009de6" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="800" fill="#0d0f17" />
+  <rect width="1280" height="800" fill="url(#grid)" />
+  <circle cx="1090" cy="80" r="280" fill="url(#glow)" />
+
+  <!-- document -->
+  <g transform="translate(330 90)">
+    <rect x="0" y="0" width="620" height="620" rx="12" fill="url(#page)" />
+    <rect x="0" y="0" width="620" height="620" rx="12" fill="none" stroke="#00b3e6" stroke-opacity="0.45" stroke-dasharray="10 10" />
+
+    <rect x="44" y="44" width="48" height="48" rx="8" fill="#00b3e6" fill-opacity="0.16" stroke="#00b3e6" stroke-opacity="0.8" />
+    <path d="M68 53 83 68 68 83 53 68Z" fill="#00b3e6" />
+    <text x="110" y="70" fill="#0d0f17" font-family="Inter, sans-serif" font-size="24" font-weight="700" letter-spacing="3">REPORT CARD</text>
+    <text x="110" y="96" fill="#5c6579" font-family="Inter, sans-serif" font-size="15">Term results — print-ready PDF</text>
+
+    <line x1="44" y1="126" x2="576" y2="126" stroke="#0d0f17" stroke-opacity="0.12" />
+
+    <text x="44" y="160" fill="#5c6579" font-family="Inter, sans-serif" font-size="13" letter-spacing="2">STUDENT</text>
+    <rect x="44" y="172" width="210" height="12" rx="6" fill="#0d0f17" fill-opacity="0.22" />
+    <text x="330" y="160" fill="#5c6579" font-family="Inter, sans-serif" font-size="13" letter-spacing="2">CLASS</text>
+    <rect x="330" y="172" width="120" height="12" rx="6" fill="#0d0f17" fill-opacity="0.16" />
+
+    <rect x="44" y="212" width="532" height="30" rx="6" fill="#00b3e6" fill-opacity="0.12" />
+    <text x="60" y="232" fill="#39414f" font-family="Inter, sans-serif" font-size="13" letter-spacing="2">SUBJECT</text>
+    <text x="500" y="232" fill="#39414f" font-family="Inter, sans-serif" font-size="13" letter-spacing="2">SCORE</text>
+
+    <g fill="#0d0f17" fill-opacity="0.14">
+      <rect x="60" y="272" width="180" height="12" rx="6" />
+      <rect x="510" y="272" width="52" height="12" rx="6" fill="#00b3e6" fill-opacity="0.55" />
+    </g>
+    <g fill="#0d0f17" fill-opacity="0.14">
+      <rect x="60" y="316" width="150" height="12" rx="6" />
+      <rect x="510" y="316" width="52" height="12" rx="6" fill="#00b3e6" fill-opacity="0.55" />
+    </g>
+    <g fill="#0d0f17" fill-opacity="0.14">
+      <rect x="60" y="360" width="196" height="12" rx="6" />
+      <rect x="510" y="360" width="52" height="12" rx="6" fill="#00b3e6" fill-opacity="0.55" />
+    </g>
+    <g fill="#0d0f17" fill-opacity="0.14">
+      <rect x="60" y="404" width="164" height="12" rx="6" />
+      <rect x="510" y="404" width="52" height="12" rx="6" fill="#00b3e6" fill-opacity="0.55" />
+    </g>
+
+    <line x1="44" y1="452" x2="576" y2="452" stroke="#0d0f17" stroke-opacity="0.12" />
+
+    <text x="44" y="492" fill="#5c6579" font-family="Inter, sans-serif" font-size="13" letter-spacing="2">TOTAL</text>
+    <text x="44" y="524" fill="#0d0f17" font-family="Inter, sans-serif" font-size="34" font-weight="700">294</text>
+    <text x="44" y="548" fill="#5c6579" font-family="Inter, sans-serif" font-size="13">out of 400</text>
+
+    <g transform="translate(420 476)">
+      <circle cx="52" cy="52" r="52" fill="url(#badge)" />
+      <circle cx="52" cy="52" r="52" fill="none" stroke="#0d0f17" stroke-opacity="0.18" stroke-dasharray="6 7" />
+      <text x="52" y="46" text-anchor="middle" fill="#0d0f17" font-family="Inter, sans-serif" font-size="12" letter-spacing="2">POSITION</text>
+      <text x="52" y="76" text-anchor="middle" fill="#0d0f17" font-family="Inter, sans-serif" font-size="30" font-weight="700">3rd</text>
+    </g>
+
+    <rect x="44" y="566" width="96" height="30" rx="15" fill="#0d0f17" fill-opacity="0.08" />
+    <text x="92" y="586" text-anchor="middle" fill="#39414f" font-family="Inter, sans-serif" font-size="13">A4 · PDF</text>
+    <rect x="152" y="566" width="118" height="30" rx="15" fill="#0d0f17" fill-opacity="0.08" />
+    <text x="211" y="586" text-anchor="middle" fill="#39414f" font-family="Inter, sans-serif" font-size="13">Puppeteer</text>
+  </g>
+
+  <!-- accent marks -->
+  <g fill="none" stroke="#00b3e6" stroke-opacity="0.45" stroke-dasharray="8 10">
+    <circle cx="200" cy="240" r="44" />
+    <circle cx="1080" cy="640" r="30" />
+  </g>
+  <circle cx="200" cy="240" r="6" fill="#00b3e6" fill-opacity="0.7" />
+  <circle cx="1080" cy="640" r="5" fill="#00b3e6" fill-opacity="0.7" />
+</svg>

@@ -18,7 +18,10 @@ export default function DesktopNav({ activeId }: DesktopNavProps) {
 								className={style.desktop__link}
 								aria-current={isActive ? "location" : undefined}
 							>
-								{link.label}
+								<span className={style.desktop__index} aria-hidden="true">
+									{link.index}
+								</span>
+								<span className={style.desktop__label}>{link.label}</span>
 							</a>
 						</li>
 					);

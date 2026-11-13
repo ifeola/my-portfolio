@@ -1,4 +1,6 @@
 .logo__bg {
+	position: relative;
+	z-index: 102;
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;

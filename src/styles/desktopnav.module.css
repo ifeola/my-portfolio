@@ -3,45 +3,74 @@
 }
 
 @media (width >= 768px) {
-	.desktop__links,
+	.desktop__links {
+		display: flex;
+		align-items: center;
+		padding: 0.4rem;
+		border: 1px solid hsla(var(--white), 0.08);
+		border-radius: 8px;
+		background-color: hsla(var(--white), 0.03);
+	}
+
 	.desktop__list {
 		display: flex;
 		align-items: center;
-		gap: 2.4rem;
+		gap: 0.2rem;
 	}
 
 	.desktop__link {
 		position: relative;
-		padding-block: 0.8rem;
+		display: inline-flex;
+		align-items: center;
+		gap: 0.8rem;
+
+		padding: 0.8rem 1.4rem;
+		border: 1px solid transparent;
+		border-radius: 8px;
+
 		font-size: var(--link-fz);
 		color: var(--text-color);
-		transition: color var(--transition-duration) var(--transition-timing);
+		transition:
+			color var(--transition-duration) var(--transition-timing),
+			background-color var(--transition-duration) var(--transition-timing),
+			border-color var(--transition-duration) var(--transition-timing);
 	}
 
 	.desktop__link:hover {
 		color: var(--white-color);
-	}
-
-	.desktop__link::after {
-		content: "";
-		position: absolute;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		height: 2px;
-		border-radius: 2px;
-		background-color: currentColor;
-		transform: scaleX(0);
-		transform-origin: 0 50%;
-		transition: transform 350ms var(--ease-out-expo);
-	}
-
-	.desktop__link:hover::after,
-	.desktop__link[aria-current="location"]::after {
-		transform: scaleX(1);
+		background-color: hsla(var(--white), 0.06);
 	}
 
 	.desktop__link[aria-current="location"] {
 		color: var(--primary-color);
+		background-color: var(--primary-transparent-2);
+		border-color: var(--primary-transparent-3);
+	}
+
+	.desktop__index {
+		display: none;
+		min-width: 2rem;
+		text-align: right;
+		font-size: 1rem;
+		font-weight: 700;
+		letter-spacing: 0.12em;
+		color: var(--primary-color);
+		opacity: 0.45;
+		transition: opacity var(--transition-duration) var(--transition-timing);
+	}
+
+	.desktop__link:hover .desktop__index,
+	.desktop__link[aria-current="location"] .desktop__index {
+		opacity: 1;
+	}
+}
+
+@media (width >= 1024px) {
+	.desktop__index {
+		display: inline-block;
+	}
+
+	.desktop__link {
+		padding-inline: 1.6rem;
 	}
 }

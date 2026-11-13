@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800" role="img" aria-label="Illustration of a long web address being shortened into a short link">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#00b3e6" stroke-opacity="0.09" />
+    </pattern>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00b3e6" stop-opacity="0.22" />
+      <stop offset="100%" stop-color="#00b3e6" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="800" fill="#0d0f17" />
+  <rect width="1280" height="800" fill="url(#grid)" />
+  <circle cx="190" cy="110" r="280" fill="url(#glow)" />
+
+  <!-- long url -->
+  <g transform="translate(80 150)">
+    <rect x="0" y="0" width="600" height="96" rx="12" fill="#11141d" stroke="#e6e6e6" stroke-opacity="0.14" />
+    <circle cx="40" cy="36" r="6" fill="#00b3e6" fill-opacity="0.7" />
+    <text x="60" y="41" fill="#8b93a3" font-family="Inter, sans-serif" font-size="16">https://example.com/guides/</text>
+    <text x="60" y="68" fill="#8b93a3" font-family="Inter, sans-serif" font-size="16">annual-budget-spreadsheet-2026</text>
+    <rect x="516" y="24" width="60" height="24" rx="12" fill="#e6e6e6" fill-opacity="0.08" />
+    <text x="546" y="41" text-anchor="middle" fill="#b8b8b8" font-family="Inter, sans-serif" font-size="13">62ch</text>
+  </g>
+
+  <!-- arrow path -->
+  <g fill="none" stroke="#00b3e6" stroke-opacity="0.7" stroke-width="2" stroke-dasharray="9 9">
+    <path d="M700 198 C 830 198 830 330 960 330" />
+  </g>
+  <path d="M952 322 976 330 952 338Z" fill="#00b3e6" fill-opacity="0.85" />
+  <circle cx="700" cy="198" r="5" fill="#00b3e6" fill-opacity="0.8" />
+
+  <!-- short link -->
+  <g transform="translate(820 280)">
+    <rect x="0" y="0" width="380" height="200" rx="12" fill="#0d0f17" stroke="#00b3e6" stroke-opacity="0.45" stroke-dasharray="10 10" />
+    <rect x="0" y="0" width="380" height="200" rx="12" fill="url(#glow)" />
+
+    <text x="40" y="60" fill="#8b93a3" font-family="Inter, sans-serif" font-size="13" letter-spacing="2">SHORT LINK</text>
+
+    <g transform="translate(40 84)">
+      <rect x="0" y="0" width="300" height="60" rx="8" fill="#00b3e6" fill-opacity="0.12" stroke="#00b3e6" stroke-opacity="0.65" />
+      <path
+        d="M28 30a11 11 0 0 1 11-11h10a11 11 0 0 1 0 22H39a11 11 0 0 1-11-11Zm52 0a11 11 0 0 1 11-11h10a11 11 0 0 1 0 22H91a11 11 0 0 1-11-11ZM42 30h38"
+        fill="none"
+        stroke="#00b3e6"
+        stroke-width="3"
+        stroke-linecap="round"
+      />
+      <text x="118" y="39" fill="#e6e6e6" font-family="Inter, sans-serif" font-size="25" font-weight="700" letter-spacing="2">h7Kq2z</text>
+    </g>
+
+    <rect x="40" y="160" width="72" height="26" rx="13" fill="#e6e6e6" fill-opacity="0.08" />
+    <text x="76" y="178" text-anchor="middle" fill="#b8b8b8" font-family="Inter, sans-serif" font-size="13">301</text>
+    <text x="128" y="178" fill="#5c6579" font-family="Inter, sans-serif" font-size="13">one code · one destination</text>
+  </g>
+
+  <!-- corner marks -->
+  <g fill="none" stroke="#00b3e6" stroke-opacity="0.4" stroke-dasharray="7 9">
+    <circle cx="1130" cy="600" r="38" />
+  </g>
+  <circle cx="1130" cy="600" r="5" fill="#00b3e6" fill-opacity="0.7" />
+
+  <!-- redirect log -->
+  <g transform="translate(80 430)">
+    <rect x="0" y="0" width="580" height="132" rx="10" fill="#11141d" stroke="#e6e6e6" stroke-opacity="0.12" />
+    <text x="28" y="44" fill="#00b3e6" font-family="Inter, sans-serif" font-size="14" letter-spacing="1">GET</text>
+    <text x="70" y="44" fill="#b8b8b8" font-family="Inter, sans-serif" font-size="14">/h7Kq2z</text>
+    <text x="28" y="82" fill="#00b3e6" font-family="Inter, sans-serif" font-size="14" letter-spacing="1">301</text>
+    <text x="70" y="82" fill="#8b93a3" font-family="Inter, sans-serif" font-size="14">→ example.com/guides/annual-budget-spreadsheet</text>
+    <text x="28" y="112" fill="#5c6579" font-family="Inter, sans-serif" font-size="13">one code · one destination · one lookup</text>
+  </g>
+</svg>

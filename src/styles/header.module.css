@@ -23,6 +23,7 @@
 
 .header[data-scrolled="true"] {
 	background-color: hsla(var(--bg), 0.86);
+	box-shadow: 0 1.6rem 3.2rem hsla(var(--bg), 0.5);
 }
 
 .header__progress {
