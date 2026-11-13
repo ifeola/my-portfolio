@@ -7,10 +7,12 @@ import About from "./pages/About";
 import Skills from "./pages/Skills";
 import Contact from "./pages/Contact";
 import { useReveal } from "./hooks/useReveal";
+import { useSpotlight } from "./hooks/useSpotlight";
 import style from "./styles/main.module.css";
 
 function App() {
 	useReveal();
+	useSpotlight();
 
 	return (
 		<>

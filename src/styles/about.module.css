@@ -65,8 +65,8 @@
 .about__facts {
 	display: grid;
 	grid-template-columns: 1fr;
-	gap: 2rem;
-	margin-block-start: 4rem;
+	gap: 1.6rem;
+	margin-block-start: 3.2rem;
 	padding-block-start: 2.4rem;
 	border-top: 1px dashed var(--white-transparent);
 }
@@ -87,10 +87,6 @@
 }
 
 @media (width >= 768px) {
-	.about {
-		padding-block: 8rem;
-	}
-
 	.about__content {
 		grid-template-columns: 1fr 1fr;
 		align-items: center;
@@ -111,8 +107,8 @@
 
 	.about__facts {
 		grid-template-columns: repeat(3, 1fr);
-		gap: 2.4rem 4rem;
-		margin-block-start: 5.6rem;
+		gap: 2.4rem 3.2rem;
+		margin-block-start: 4.8rem;
 	}
 
 	.about__container .subtitle {

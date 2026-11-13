@@ -6,15 +6,15 @@
 .project__list {
 	position: relative;
 	display: grid;
-	gap: 8rem;
-	margin-block-start: 4.8rem;
+	gap: 6.4rem;
+	margin-block-start: var(--space-block);
 	padding: 0;
 	list-style: none;
 }
 
 @media (width >= 768px) {
 	.project__list {
-		gap: 12rem;
-		margin-block-start: 6.4rem;
+		gap: 9.6rem;
+		margin-block-start: var(--space-block);
 	}
 }

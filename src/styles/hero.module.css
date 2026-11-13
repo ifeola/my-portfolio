@@ -1,6 +1,6 @@
 .hero {
 	position: relative;
-	min-height: 58rem;
+	min-height: 52rem;
 	height: 100%;
 
 	display: flex;
@@ -67,12 +67,26 @@
 }
 
 .hero__heading {
-	margin-block: 2.4rem;
+	margin-block: 1.6rem;
 	max-width: 18ch;
 	font-size: var(--h1-mobile-fz);
 
 	span {
 		color: var(--text-color);
+	}
+}
+
+/* The accent line carries the brand gradient, with a solid fallback. */
+@supports ((background-clip: text) or (-webkit-background-clip: text)) {
+	.hero__heading span {
+		background-image: linear-gradient(
+			100deg,
+			var(--primary-color),
+			var(--accent-color)
+		);
+		-webkit-background-clip: text;
+		background-clip: text;
+		color: transparent;
 	}
 }
 
@@ -109,7 +123,7 @@
 	display: flex;
 	flex-direction: column;
 	gap: 1.2rem;
-	margin-block-start: 3.2rem;
+	margin-block-start: 2.4rem;
 }
 
 .social__list {
@@ -117,15 +131,15 @@
 	flex-wrap: wrap;
 	align-items: center;
 	gap: 1.6rem;
-	margin-block-start: 2.4rem;
+	margin-block-start: 2rem;
 }
 
 .circle {
 	position: absolute;
-	top: 24%;
-	right: 9%;
-	width: 4rem;
-	height: 4rem;
+	top: 17%;
+	right: 2.4rem;
+	width: 3.2rem;
+	height: 3.2rem;
 	background:
 		radial-gradient(
 			circle at 32% 28%,
@@ -138,6 +152,14 @@
 	animation: float 7s ease-in-out infinite;
 	opacity: 1;
 	z-index: 0;
+}
+
+.circle::before {
+	content: "";
+	position: absolute;
+	inset: 26%;
+	border: 1px solid hsla(var(--white), 0.22);
+	border-radius: 100%;
 }
 
 .circle::after {
@@ -221,6 +243,7 @@
 
 @media (width >= 768px) {
 	.hero__heading {
+		margin-block: 2.4rem;
 		max-width: 20ch;
 	}
 
@@ -229,12 +252,18 @@
 		width: fit-content;
 		align-items: center;
 		gap: 1.6rem;
+		margin-block-start: 3.2rem;
+	}
+
+	.social__list {
+		margin-block-start: 2.4rem;
 	}
 
 	.circle {
 		width: 8rem;
 		height: 8rem;
 		top: 35%;
+		right: 9%;
 	}
 
 	.logo__roll {

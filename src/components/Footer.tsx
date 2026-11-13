@@ -1,5 +1,6 @@
-import { NAME, TAGLINE } from "../utils/constants";
+import { EMAIL, NAME, TAGLINE, mailtoLink, socialLinks } from "../utils/constants";
 import LogoOnly from "./LogoOnly";
+import ArrowRightTop from "./ArrowRIghtTop";
 import style from "../styles/footer.module.css";
 
 export default function Footer() {
@@ -16,6 +17,31 @@ export default function Footer() {
 						<span className={style.footer__name}>Forgentik</span>
 						<span className={style.footer__tagline}>{TAGLINE}</span>
 					</div>
+
+					<div className={style.footer__contact}>
+						<a
+							className={style.footer__email}
+							href={mailtoLink("Project enquiry — Forgentik")}
+						>
+							{EMAIL}
+						</a>
+						<ul className={style.footer__socials}>
+							{socialLinks.map((social) => (
+								<li key={social.link}>
+									<a
+										href={social.link}
+										target="_blank"
+										rel="noopener noreferrer"
+										aria-label={`${social.content} (opens in a new tab)`}
+									>
+										{social.content}
+										<ArrowRightTop />
+									</a>
+								</li>
+							))}
+						</ul>
+					</div>
+
 					<div className={style.footer__items}>
 						<span>
 							© {year} {NAME}

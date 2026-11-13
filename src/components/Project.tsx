@@ -55,7 +55,7 @@ export default function Project({ project }: ProjectProps) {
 					</span>
 				</div>
 
-				<div className={style.project__content}>
+				<div className={style.project__content} data-spotlight data-hairline>
 					<div className={style.project__meta}>
 						<p className={style.project__index} aria-hidden="true">
 							{index}

@@ -50,6 +50,8 @@ export default function Contact() {
 					<aside
 						className={style.contact__card}
 						aria-label="Contact details"
+						data-spotlight
+						data-hairline
 						data-reveal
 						style={revealDelay(120)}
 					>

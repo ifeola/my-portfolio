@@ -31,6 +31,8 @@ export default function Skills() {
 							<li
 								key={service.title}
 								className={style.services__item}
+								data-spotlight
+								data-hairline
 								data-reveal
 								style={revealDelay(i * 90)}
 							>

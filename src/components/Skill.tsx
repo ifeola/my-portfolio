@@ -8,7 +8,7 @@ type SkillProps = {
 
 export default function Skill({ skill, svg }: SkillProps) {
 	return (
-		<li className={style.skill__item} data-reveal>
+		<li className={style.skill__item} data-spotlight data-hairline data-reveal>
 			<span className={style.skill__icon} aria-hidden="true">
 				{svg}
 			</span>

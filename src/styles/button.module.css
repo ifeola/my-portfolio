@@ -59,6 +59,7 @@
 
 .cta:hover {
 	transform: translateY(-1px);
+	box-shadow: 0 0 2.4rem var(--primary-transparent-2);
 }
 
 .cta:hover::after {
