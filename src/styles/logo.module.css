@@ -3,9 +3,10 @@
 	z-index: 102;
 	display: inline-flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: left;
 	gap: 0.8rem;
 	color: var(--white-color);
+	padding-inline-start: 1rem;
 }
 
 .logo__mark {

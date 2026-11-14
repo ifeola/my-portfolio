@@ -11,31 +11,31 @@ import { useSpotlight } from "./hooks/useSpotlight";
 import style from "./styles/main.module.css";
 
 function App() {
-	useReveal();
-	useSpotlight();
+  useReveal();
+  useSpotlight();
 
-	return (
-		<>
-			<a className="skip-link" href="#main">
-				Skip to content
-			</a>
+  return (
+    <>
+      <a className="skip-link" href="#main">
+        Skip to content
+      </a>
 
-			<Grid />
-			<Header />
+      <Grid />
+      <Header />
 
-			<main id="main" className={style.main} tabIndex={-1}>
-				<div className={style.divider}>
-					<Hero />
-					<Projects />
-					<About />
-					<Skills />
-					<Contact />
-				</div>
-			</main>
+      <main id="main" className={style.main} tabIndex={-1}>
+        <div className={style.divider}>
+          <Hero />
+          <Projects />
+          <About />
+          <Skills />
+          <Contact />
+        </div>
+      </main>
 
-			<Footer />
-		</>
-	);
+      <Footer />
+    </>
+  );
 }
 
 export default App;

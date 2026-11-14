@@ -1,34 +1,32 @@
 .main {
-	width: 100%;
-	max-width: 1440px;
+  width: 100%;
+  max-width: 1440px;
 
-	padding-inline: 1rem;
-	margin-inline: auto;
-	margin-block-start: 6.4rem;
+  padding-inline: 1rem;
+  margin-inline: auto;
 }
 
 .main:focus {
-	outline: none;
+  outline: none;
 }
 
 .divider {
-	position: relative;
-	margin-inline: auto;
-	width: 100%;
+  position: relative;
+  margin-inline: auto;
+  width: 100%;
 
-	border-left: 1px solid var(--primary-transparent-3);
-	border-right: 1px solid var(--primary-transparent-3);
-	border-left-style: dashed;
-	border-right-style: dashed;
+  border-left: 1px solid var(--primary-transparent-3);
+  border-right: 1px solid var(--primary-transparent-3);
+  /*border-left-style: dashed;*/
+  /*border-right-style: dashed;*/
 }
 
 @media (width >= 768px) {
-	.main {
-		margin-block-start: 8rem;
-		padding-inline: 0;
-	}
+  .main {
+    padding-inline: 0;
+  }
 
-	.divider {
-		width: 93%;
-	}
+  .divider {
+    width: 96%;
+  }
 }

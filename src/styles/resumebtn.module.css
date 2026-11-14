@@ -1,32 +1,36 @@
 .resume__btn {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	min-height: 4rem;
-	padding-inline: 1.6rem;
-	border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 1.6rem;
+  border-radius: 8px;
+  height: 100%;
 
-	background: var(--primary-transparent-2);
-	border: 1px solid var(--primary-color);
-	color: var(--primary-color);
-	font-size: 1.3rem;
-	font-weight: 600;
+  background: var(--primary-transparent-2);
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  font-weight: 600;
 
-	transition:
-		background-color var(--transition-duration) var(--transition-timing),
-		color var(--transition-duration) var(--transition-timing),
-		transform var(--transition-duration) var(--ease-out-expo);
+  transition:
+    background-color var(--transition-duration) var(--transition-timing),
+    color var(--transition-duration) var(--transition-timing),
+    transform var(--transition-duration) var(--ease-out-expo);
 }
 
 .resume__btn:hover {
-	background-color: var(--primary-color);
-	color: var(--bg-color);
-	transform: translateY(-0.2rem);
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  /* transform: translateY(-0.2rem); */
 }
 
 @media (width >= 768px) {
-	.resume__btn {
-		min-height: 4.4rem;
-		padding-inline: 2.4rem;
-	}
+  .resume__btn {
+    height: 100%;
+    max-width: 16rem;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    border-left: 1px solid var(--primary-color);
+  }
 }
